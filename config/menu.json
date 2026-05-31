@@ -112,13 +112,6 @@
     "sort": 15
   },
   {
-    "title": "Account",
-    "href": "/whm",
-    "class": "menu_account",
-    "id": "memuAccount",
-    "sort": 16
-  },
-  {
     "title": "Cron",
     "href": "/crontab",
     "class": "menu_day",
