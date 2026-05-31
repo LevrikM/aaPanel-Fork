@@ -135,6 +135,33 @@
 							hBtn._adHidden = true;
 						}
 					}
+					
+					// 4. Fallback search for text nodes containing "Спливає на:" or "Lifetime"
+					var textContainers = root.querySelectorAll ? root.querySelectorAll('span, div') : [];
+					for (var m = 0; m < textContainers.length; m++) {
+						var tc = textContainers[m];
+						if (tc._adHidden || tc.children.length > 2) continue; // skip large containers
+						var ttxt = tc.textContent || '';
+						if ((ttxt.includes('Спливає на:') || ttxt.includes('Lifetime') || 
+						     ttxt.includes('Поновлення') || ttxt.includes('Сумісно на:') ||
+						     ttxt.includes('Обліковий запис')) && 
+						     ttxt.length < 60) {
+							// Hide it and its parent to be safe
+							tc.style.setProperty('display', 'none', 'important');
+							if (tc.parentElement) tc.parentElement.style.setProperty('display', 'none', 'important');
+							tc._adHidden = true;
+						}
+					}
+
+					// 5. Replace Footer Content
+					var footer = root.querySelector ? root.querySelector('#layout-footer, .footer, [class*="layout-footer"]') : null;
+					if (footer && !footer._footerReplaced) {
+						// Only replace if it has the original content (contains aapanel or 2014)
+						if (footer.textContent.includes('aaPanel') || footer.textContent.includes('2014')) {
+							footer.innerHTML = '<div style="display: flex; justify-content: center; align-items: center; height: 52px; color: #999; font-size: 13px;">HomeServer Panel 2026</div>';
+							footer._footerReplaced = true;
+						}
+					}
 				}
 				
 				// Run immediately on any available content
