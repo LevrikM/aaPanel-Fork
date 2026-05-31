@@ -162,6 +162,36 @@
 							footer._footerReplaced = true;
 						}
 					}
+
+					// 6. Remove forced "Log in to aaPanel account" modal
+					var dialogs = root.querySelectorAll ? root.querySelectorAll('.n-modal, .n-dialog, .n-card, [role="dialog"]') : [];
+					for (var n = 0; n < dialogs.length; n++) {
+						var dialog = dialogs[n];
+						if (dialog._adHidden) continue;
+						var dTxt = dialog.textContent || '';
+						if (dTxt.includes('Log in to aaPanel account') || dTxt.includes('Register to get') || dTxt.includes('Continue with Google')) {
+							// Find the outermost modal wrapper (Naive UI usually uses a top-level container)
+							var wrapper = dialog;
+							for (var p = 0; p < 8 && wrapper.parentElement && wrapper.parentElement !== document.body; p++) {
+								if (wrapper.className && typeof wrapper.className === 'string' && wrapper.className.includes('n-modal-container')) {
+									break;
+								}
+								wrapper = wrapper.parentElement;
+							}
+							wrapper.style.setProperty('display', 'none', 'important');
+							if (wrapper.parentElement) {
+								var mask = wrapper.parentElement.querySelector('.n-modal-mask');
+								if (mask) mask.style.setProperty('display', 'none', 'important');
+								
+								// If the parent is a portal wrapper with z-index, hide it so it doesn't block clicks
+								if (wrapper.parentElement.style && wrapper.parentElement.style.zIndex) {
+									wrapper.parentElement.style.setProperty('display', 'none', 'important');
+									wrapper.parentElement.style.setProperty('pointer-events', 'none', 'important');
+								}
+							}
+							dialog._adHidden = true;
+						}
+					}
 				}
 				
 				// Run immediately on any available content
