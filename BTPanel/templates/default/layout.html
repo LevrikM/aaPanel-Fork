@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -133,6 +133,23 @@
 			  window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
 			}
 		</script>
+		<style>
+			/* Hide promotional and account elements globally */
+			.pro-badge,
+			.coupon-box,
+			.product-buy,
+			.authState,
+			.recommend-immediate-icon,
+			.header-feedback,
+			.recommend,
+			.btpro-gray,
+			.btpro,
+			.btltd,
+			#updata_pro_info,
+			.header-item.header-username {
+				display: none !important;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="bt-warp bge6">
@@ -861,9 +878,11 @@
 			<script type="text/javascript">
 				const showMainView = document.getElementById('showMainView');
 
-				showMainView.addEventListener('mouseover', function (event) {
-					window.parent.postMessage('showMainView', '*');
-				});
+				if(showMainView) {
+                    showMainView.addEventListener('mouseover', function (event) {
+                        window.parent.postMessage('showMainView', '*');
+                    });
+                }
 
 				window.addEventListener('message', event => {
 					if (event.data === 'init') {
@@ -875,5 +894,60 @@
 				});
 			</script>
 		</div>
-	</body>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+    const missingPlugins = [
+        { title: 'WP Toolkit', href: '/wp/toolkit', icon: 'i-common:wp' },
+        { title: 'aaPanel WAF', href: '/btwaf', icon: 'i-common:waf' },
+        { title: 'Mail Server', href: '/mail', icon: 'i-common:mail' }
+    ];
+
+    const observer = new MutationObserver((mutations) => {
+        // Remove PRO/ads
+        document.querySelectorAll('.pro-badge, .coupon-box, .product-buy, .authState, .header-item.header-username').forEach(e => e.style.display = 'none');
+        
+        // Remove PRO badge and features list
+        document.querySelectorAll('.badge').forEach(e => {
+            if(e.innerText.includes('PRO')) {
+                if(e.parentElement) e.parentElement.style.display = 'none';
+            }
+        });
+
+        // Override Footer
+        const footers = document.querySelectorAll('.n-layout-footer .text-center, .footer.bgw');
+        footers.forEach(f => {
+            if (f.innerText !== 'HomeServer Panel ©2026') {
+                f.innerHTML = 'HomeServer Panel ©2026';
+                f.style.color = '#999';
+            }
+        });
+
+        // Add custom menu items
+        const menu = document.querySelector('.n-menu');
+        if (menu && !document.getElementById('custom-plugins-added')) {
+            const menuItems = menu.querySelectorAll('.n-menu-item');
+            if (menuItems.length > 5) {
+                const container = menuItems[0].parentElement;
+                const marker = document.createElement('div');
+                marker.id = 'custom-plugins-added';
+                marker.style.display = 'none';
+                container.appendChild(marker);
+
+                missingPlugins.forEach(plugin => {
+                    const item = document.createElement('div');
+                    item.className = 'n-menu-item';
+                    item.setAttribute('role', 'menuitem');
+                    item.style.marginTop = '4px';
+                    item.innerHTML = '<div class="n-menu-item-content"><a class="n-menu-item-link ' + plugin.icon + '" href="' + plugin.href + '" style="text-decoration:none; display:flex; align-items:center; padding: 0 18px; height: 42px;"><div class="n-menu-item-content-header" style="margin-left: 32px; color: var(--n-item-text-color, #c1c6c8); font-size: 14px;">' + plugin.title + '</div></a></div>';
+                    container.appendChild(item);
+                });
+            }
+        }
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+});
+</script>
+</body>
 </html>
+
