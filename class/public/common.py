@@ -762,7 +762,7 @@ def GetConfigValue(key):
     config = GetConfig()
     if not config:
         config = {"product": "Linux panel", "setup_path": "/www/server", "openlitespeed_path": "/usr/local",
-         "language": "English", "title": "aaPanel Linux panel", "brand": "aaPanel", "root_path": "/www",
+         "language": "English", "title": "HomeServer Panel Linux panel", "brand": "HomeServer Panel", "root_path": "/www",
          "template": "default", "logs_path": "/www/wwwlogs", "home": "https://www.aapanel.com", "recycle_bin": True}
         writeFile('/www/server/panel/config/config.json',json.dumps(config))
     if not key in config.keys():
@@ -9254,6 +9254,10 @@ def load_soft_list(force: bool = True, retry_count: int = 0):
             # 获取软件列表失败，重试
             return load_soft_list(force, retry_count + 1)
         raise PanelError(str(plugin_list_data['msg']))
+
+    if isinstance(plugin_list_data, dict) and 'list' in plugin_list_data:
+        for p in plugin_list_data['list']:
+            p['endtime'] = 0
 
     return plugin_list_data
 

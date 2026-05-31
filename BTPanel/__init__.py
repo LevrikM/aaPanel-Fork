@@ -2914,18 +2914,6 @@ def panel_other(name=None, fun=None, stype=None):
             False, 'Please pass in the plug-in name!'), json_header
     p_path = public.get_plugin_path() + '/' + name
     if not os.path.exists(p_path):
-        if name == 'btwaf' and fun == 'index':
-            pdata = {}
-            import panelPlugin
-            plu_panel = panelPlugin.panelPlugin()
-            plugin_list = plu_panel.get_cloud_list()
-            if not 'pro' in plugin_list: plugin_list['pro'] = -1
-            for p in plugin_list['list']:
-                if p['name'] in ['btwaf']:
-                    if p['endtime'] != 0 and p['endtime'] < time.time():
-                        pdata['error_msg'] = 1
-                        break
-            return render_template('error3.html', data=pdata)
         return abort(404)
 
     # 是否响插件应静态文件
