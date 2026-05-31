@@ -11,6 +11,27 @@
 		<link rel="stylesheet" href="/static/oldcss/site.css?v=1779846436875" />
 		<link rel="stylesheet" href="/static/vite/iconfont/iconfont.css?v=1779846436875" />
 		<!-- naive-ui 的样式会出现在这里 -->
+		<style>
+			/* Hide promotional, PRO/AD badge elements and account upgrade buttons */
+			
+			/* PRO badge button and subscription status in header */
+			.bt-pro-btn,
+			.pro-badge,
+			.coupon-box,
+			.product-buy,
+			.authState,
+			.header-feedback,
+			.recommend,
+			.btpro-gray,
+			.btpro,
+			.btltd,
+			#updata_pro_info,
+			[class*="auth-state"],
+			[class*="pro-badge"],
+			[class*="account-state"] {
+				display: none !important;
+			}
+		</style>
 		<meta name="naive-ui-style" />
 		<title>{{session['title']}}</title>
 		<script>
@@ -50,6 +71,100 @@
 		<a style="display: none" id="recycle_bin" data="{{data['recycle_bin']}}"></a>
 
 		<div id="app"></div>
+		<script>
+			// MutationObserver to remove promotional/AD elements rendered dynamically by Vue
+			(function() {
+				'use strict';
+				
+				function removeAdsAndProElements(root) {
+					if (!root) root = document;
+					
+					// 1. Remove AD plugin cards in Software/Plugin section
+					// They have a label with text 'AD' inside them
+					var allElements = root.querySelectorAll ? root.querySelectorAll('*') : [];
+					for (var i = 0; i < allElements.length; i++) {
+						var el = allElements[i];
+						// Skip already hidden elements
+						if (el._adHidden) continue;
+						
+						// Check for AD tag badge (small element with text 'AD')
+						if (el.children && el.children.length === 0 && el.textContent === 'AD') {
+							// Walk up to find the plugin card container
+							var card = el.parentElement;
+							for (var j = 0; j < 6 && card; j++) {
+								if (card.tagName === 'LI' || (card.className && typeof card.className === 'string' && 
+									(card.className.includes('soft-item') || card.className.includes('plugin') || 
+									 card.className.includes('card') || card.className.includes('grid')))) {
+									break;
+								}
+								card = card.parentElement;
+							}
+							if (card && card !== document.body) {
+								card.style.setProperty('display', 'none', 'important');
+								card._adHidden = true;
+							}
+						}
+					}
+					
+					// 2. Remove PRO/subscription badge button in the top header bar
+					// It's a button/tag containing text like 'PRO', 'Lifetime', 'Renewal'
+					var buttons = root.querySelectorAll ? root.querySelectorAll('button, .n-button, .n-tag, [class*="badge"], [class*="tag"]') : [];
+					for (var k = 0; k < buttons.length; k++) {
+						var btn = buttons[k];
+						if (btn._adHidden) continue;
+						var txt = btn.textContent || '';
+						// Hide the PRO badge/button and subscription renewal button
+						if ((txt.trim() === 'PRO' || txt.includes('Lifetime') || txt.includes('Renewal') || 
+						     txt.includes('Поновлення') || txt.includes('Сумісно на:') ||
+						     txt.includes('Compatible') || txt.includes('Upgrade')) &&
+						    txt.length < 80) {
+							btn.style.setProperty('display', 'none', 'important');
+							btn._adHidden = true;
+						}
+					}
+					
+					// 3. Remove account-state/auth icons in top right of header
+					// These are usually near the user icon or notification bell area
+					var headerBtns = root.querySelectorAll ? root.querySelectorAll('.header-icon, .header-action, [class*="header-btn"], [class*="header-right"] .n-button') : [];
+					for (var l = 0; l < headerBtns.length; l++) {
+						var hBtn = headerBtns[l];
+						if (hBtn._adHidden) continue;
+						var hTxt = (hBtn.textContent || '').trim();
+						if (hTxt === '' || hTxt === 'PRO' || hTxt.includes('Upgrade')) {
+							hBtn.style.setProperty('display', 'none', 'important');
+							hBtn._adHidden = true;
+						}
+					}
+				}
+				
+				// Run immediately on any available content
+				removeAdsAndProElements(document);
+				
+				// Set up MutationObserver to handle Vue dynamic rendering
+				var observer = new MutationObserver(function(mutations) {
+					var shouldProcess = false;
+					for (var i = 0; i < mutations.length; i++) {
+						if (mutations[i].addedNodes.length > 0) {
+							shouldProcess = true;
+							break;
+						}
+					}
+					if (shouldProcess) {
+						removeAdsAndProElements(document);
+					}
+				});
+				
+				observer.observe(document.body || document.documentElement, {
+					childList: true,
+					subtree: true
+				});
+				
+				// Also run after short delays to catch late-rendered elements
+				setTimeout(function() { removeAdsAndProElements(document); }, 500);
+				setTimeout(function() { removeAdsAndProElements(document); }, 1500);
+				setTimeout(function() { removeAdsAndProElements(document); }, 3000);
+			})();
+		</script>
 
 		<script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
 		<script nomodule crossorigin id="vite-legacy-polyfill" src="/static/vite/js/polyfills-legacy-Bmu_TDic.js?v=1779846436875"></script>
