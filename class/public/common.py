@@ -4723,6 +4723,7 @@ def get_pd(args=None):
         @param args:
         @return tuple[html, pro, ltd]
     """
+    return ('<span class="btpro">Lifetime Pro</span>', 0, 0)
     from BTPanel import cache
 
     # 专业版到期时间 -1.过期 0.永久授权 >0.到期时间

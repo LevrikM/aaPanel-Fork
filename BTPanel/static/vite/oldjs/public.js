@@ -6645,14 +6645,7 @@ var product_recommend = {
 	 * @description 获取支付状态
 	 */
 	get_pay_status: function () {
-		var pro_end = parseInt(bt.get_cookie('pro_end') || -1);
-		var ltd_end = parseInt(bt.get_cookie('ltd_end') || -1);
-		var is_pay = pro_end > -1 || ltd_end > -1; // 是否购买付费版本
-		var advanced = 'pro'; // 已购买，专业版优先显示
-		if (pro_end === -2 || pro_end > -1) advanced = 'pro';
-		if (ltd_end === -2 || ltd_end > -1) advanced = 'ltd';
-		var end_time = advanced === 'ltd' ? ltd_end : pro_end; // 到期时间
-		return { advanced: advanced, is_pay: is_pay, end_time: end_time };
+		return { advanced: 'pro', is_pay: true, end_time: 0 };
 	},
 
 	pay_product_sign: function (type, source) {
@@ -6680,53 +6673,7 @@ var product_recommend = {
 	 * @param {Object} pay_id 购买的入口id
 	 */
 	recommend_product_view: function (config) {
-		var name = config.name.split('_')[0];
-		var status = this.get_pay_status();
-		console.log(status);
-		bt.open({
-			title: false,
-			area: '650px',
-			btn: false,
-			content:
-				'<div class="ptb15" style="display: flex;">\
-        <div class="product_view"><img src="/static/images/recommend/' +
-				name +
-				'.png"/></div>\
-        <div class="product_describe ml10">\
-          <div class="describe_title">' +
-				config.pluginName +
-				'</div>\
-          <div class="describe_ps">' +
-				config.ps +
-				'</div>\
-          <div class="product_describe_btn">\
-            <a class="btn btn-default mr10 btn-sm productPreview ' +
-				(!config.preview ? 'hide' : '') +
-				'" href="' +
-				config.preview +
-				'" target="_blank">产品预览</a><button class="btn btn-success btn-sm buyNow">立即购买</button>\
-          </div>\
-        </div>\
-      </div>',
-			success: function () {
-				// 产品预览
-				$('.product_view img').click(function () {
-					layer.open({
-						type: 1,
-						title: '查看图片',
-						area: ['650px', '450px'],
-						closeBtn: 2,
-						btn: false,
-						content: '<img src="/static/images/recommend/' + name + '.png" style="width:100%" />',
-					});
-				});
-				// 立即购买
-				$('.buyNow').click(function () {
-					bt.set_cookie('pay_source', config.pay);
-					bt.soft['updata_' + status.advanced]();
-				});
-			},
-		});
+        return;
 	},
 };
 
