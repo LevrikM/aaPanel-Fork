@@ -1,0 +1,12 @@
+{
+  "issuer": "aapanel.com",
+  "issuer_O": "aapanel.com",
+  "notAfter": "2036-05-27",
+  "notBefore": "2026-05-30",
+  "dns": [
+    "89.105.225.17",
+    "192.168.0.228"
+  ],
+  "subject": "89.105.225.17",
+  "endtime": 3648
+}
