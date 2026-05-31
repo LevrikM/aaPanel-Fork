@@ -1,230 +1,246 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="referer" content="never" />
-		<meta name="renderer" content="webkit" />
-		<link rel="shortcut icon" href="{{g['panel_theme']['logo']['favicon']}}" type="image/x-icon" />
-		<link rel="stylesheet" href="/static/bootstrap-3.3.5/css/bootstrap.min.css?v=1779846436875" />
-		<link rel="stylesheet" href="/static/codemirror/lib/codemirror.css?v=1779846436875" />
-		<link rel="stylesheet" href="/static/oldcss/site.css?v=1779846436875" />
-		<link rel="stylesheet" href="/static/vite/iconfont/iconfont.css?v=1779846436875" />
-		<!-- naive-ui 的样式会出现在这里 -->
-		<style>
-			/* Hide promotional, PRO/AD badge elements and account upgrade buttons */
-			
-			/* PRO badge button and subscription status in header */
-			.bt-pro-btn,
-			.pro-badge,
-			.coupon-box,
-			.product-buy,
-			.authState,
-			.header-feedback,
-			.recommend,
-			.btpro-gray,
-			.btpro,
-			.btltd,
-			#updata_pro_info,
-			[class*="auth-state"],
-			[class*="pro-badge"],
-			[class*="account-state"] {
-				display: none !important;
-			}
-		</style>
-		<meta name="naive-ui-style" />
-		<title>{{session['title']}}</title>
-		<script>
-			window.sites_path = "{{session['config']['sites_path']}}"
-			window.webserver = "{{session['webserver']}}"
-			window.distribution = "{{session['config']['distribution']}}"
-			window.panelVersion = "{{session['version']}}"
-			window.vite_menus = '{{g['menus']}}'
-			window.isSetup = "{{data['isSetup']}}" === 'True' ? true : false
-			window.public_key = "{{data['public_key']}}"
-			window.translations = "{{data['translations']}}"
-			// window.vite_public_icon_info = '{{g['panel_asset']}}'
-			window.vite_public_panel_theme = '{{g['panel_theme']}}'
 
-			var sessionInfo = {
-				title: "{{session['title']}}",
-				username: "{{session['username']}}",
-				statusCode: "{{data['status_code']}}",
-			}
-		</script>
-		<script type="module" crossorigin src="/static/vite/js/index-CmkLJhc0.js?v=1779846436875"></script>
-		<link rel="modulepreload" crossorigin href="/static/vite/js/prismjs-CP0O0FCs.js?v=1779846436875">
-		<link rel="modulepreload" crossorigin href="/static/vite/js/vue-core-gYhvQjN_.js?v=1779846436875">
-		<link rel="modulepreload" crossorigin href="/static/vite/js/naive-ui-DaI_A6CY.js?v=1779846436875">
-		<link rel="stylesheet" crossorigin href="/static/vite/css/prismjs-D-3FhBe_.css?v=1779846436875">
-		<link rel="stylesheet" crossorigin href="/static/vite/css/index-B51nCEFt.css?v=1779846436875">
-		<script type="module">import.meta.url;import("_").catch(()=>1);(async function*(){})().next();window.__vite_is_modern_browser=true</script>
-		<script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
-	</head>
-	<body>
-		<a
-			style="display: none"
-			id="panel_debug"
-			data="{{g['debug']}}"
-			data-pyversion="{{g['pyversion']}}"></a>
-		<a style="display: none" id="request_token_head" token="{{session['request_token_head']}}"></a>
-		<a style="display: none" id="recycle_bin" data="{{data['recycle_bin']}}"></a>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="referer" content="never" />
+	<meta name="renderer" content="webkit" />
+	<link rel="shortcut icon" href="{{g['panel_theme']['logo']['favicon']}}" type="image/x-icon" />
+	<link rel="stylesheet" href="/static/bootstrap-3.3.5/css/bootstrap.min.css?v=1779846436875" />
+	<link rel="stylesheet" href="/static/codemirror/lib/codemirror.css?v=1779846436875" />
+	<link rel="stylesheet" href="/static/oldcss/site.css?v=1779846436875" />
+	<link rel="stylesheet" href="/static/vite/iconfont/iconfont.css?v=1779846436875" />
+	<!-- naive-ui 的样式会出现在这里 -->
+	<style>
+		/* Hide promotional, PRO/AD badge elements and account upgrade buttons */
 
-		<div id="app"></div>
-		<script>
-			// MutationObserver to remove promotional/AD elements rendered dynamically by Vue
-			(function() {
-				'use strict';
-				
-				function removeAdsAndProElements(root) {
-					if (!root) root = document;
-					
-					// 1. Remove AD plugin cards in Software/Plugin section
-					// They have a label with text 'AD' inside them
-					var allElements = root.querySelectorAll ? root.querySelectorAll('*') : [];
-					for (var i = 0; i < allElements.length; i++) {
-						var el = allElements[i];
-						// Skip already hidden elements
-						if (el._adHidden) continue;
-						
-						// Check for AD tag badge (small element with text 'AD')
-						if (el.children && el.children.length === 0 && el.textContent === 'AD') {
-							// Walk up to find the plugin card container
-							var card = el.parentElement;
-							for (var j = 0; j < 6 && card; j++) {
-								if (card.tagName === 'LI' || (card.className && typeof card.className === 'string' && 
-									(card.className.includes('soft-item') || card.className.includes('plugin') || 
-									 card.className.includes('card') || card.className.includes('grid')))) {
-									break;
-								}
-								card = card.parentElement;
-							}
-							if (card && card !== document.body) {
-								card.style.setProperty('display', 'none', 'important');
-								card._adHidden = true;
-							}
-						}
-					}
-					
-					// 2. Remove PRO/subscription badge button in the top header bar
-					// It's a button/tag containing text like 'PRO', 'Lifetime', 'Renewal'
-					var buttons = root.querySelectorAll ? root.querySelectorAll('button, .n-button, .n-tag, [class*="badge"], [class*="tag"]') : [];
-					for (var k = 0; k < buttons.length; k++) {
-						var btn = buttons[k];
-						if (btn._adHidden) continue;
-						var txt = btn.textContent || '';
-						// Hide the PRO badge/button and subscription renewal button
-						if ((txt.trim() === 'PRO' || txt.includes('Lifetime') || txt.includes('Renewal') || 
-						     txt.includes('Поновлення') || txt.includes('Сумісно на:') ||
-						     txt.includes('Compatible') || txt.includes('Upgrade')) &&
-						    txt.length < 80) {
-							btn.style.setProperty('display', 'none', 'important');
-							btn._adHidden = true;
-						}
-					}
-					
-					// 3. Remove account-state/auth icons in top right of header
-					// These are usually near the user icon or notification bell area
-					var headerBtns = root.querySelectorAll ? root.querySelectorAll('.header-icon, .header-action, [class*="header-btn"], [class*="header-right"] .n-button') : [];
-					for (var l = 0; l < headerBtns.length; l++) {
-						var hBtn = headerBtns[l];
-						if (hBtn._adHidden) continue;
-						var hTxt = (hBtn.textContent || '').trim();
-						if (hTxt === '' || hTxt === 'PRO' || hTxt.includes('Upgrade')) {
-							hBtn.style.setProperty('display', 'none', 'important');
-							hBtn._adHidden = true;
-						}
-					}
-					
-					// 4. Fallback search for text nodes containing "Спливає на:" or "Lifetime"
-					var textContainers = root.querySelectorAll ? root.querySelectorAll('span, div') : [];
-					for (var m = 0; m < textContainers.length; m++) {
-						var tc = textContainers[m];
-						if (tc._adHidden || tc.children.length > 2) continue; // skip large containers
-						var ttxt = tc.textContent || '';
-						if ((ttxt.includes('Спливає на:') || ttxt.includes('Lifetime') || 
-						     ttxt.includes('Поновлення') || ttxt.includes('Сумісно на:') ||
-						     ttxt.includes('Обліковий запис')) && 
-						     ttxt.length < 60) {
-							// Hide it and its parent to be safe
-							tc.style.setProperty('display', 'none', 'important');
-							if (tc.parentElement) tc.parentElement.style.setProperty('display', 'none', 'important');
-							tc._adHidden = true;
-						}
-					}
+		/* PRO badge button and subscription status in header */
+		.bt-pro-btn,
+		.pro-badge,
+		.coupon-box,
+		.product-buy,
+		.authState,
+		.header-feedback,
+		.recommend,
+		.btpro-gray,
+		.btpro,
+		.btltd,
+		#updata_pro_info,
+		.nps-container,
+		.nps-box,
+		[class*="auth-state"],
+		[class*="pro-badge"],
+		[class*="account-state"] {
+			display: none !important;
+		}
 
-					// 5. Replace Footer Content
-					var footer = root.querySelector ? root.querySelector('#layout-footer, .footer, [class*="layout-footer"]') : null;
-					if (footer && !footer._footerReplaced) {
-						// Only replace if it has the original content (contains aapanel or 2014)
-						if (footer.textContent.includes('aaPanel') || footer.textContent.includes('2014')) {
-							footer.innerHTML = '<div style="display: flex; justify-content: center; align-items: center; height: 52px; color: #999; font-size: 13px;">HomeServer Panel 2026</div>';
-							footer._footerReplaced = true;
-						}
-					}
+		/* Move top header items to the right */
+		.bt-header {
+			justify-content: flex-end !important;
+		}
 
-					// 6. Remove forced "Log in to aaPanel account" modal
-					var dialogs = root.querySelectorAll ? root.querySelectorAll('.n-modal, .n-dialog, .n-card, [role="dialog"]') : [];
-					for (var n = 0; n < dialogs.length; n++) {
-						var dialog = dialogs[n];
-						if (dialog._adHidden) continue;
-						var dTxt = dialog.textContent || '';
-						if (dTxt.includes('Log in to aaPanel account') || dTxt.includes('Register to get') || dTxt.includes('Continue with Google')) {
-							// Find the outermost modal wrapper (Naive UI usually uses a top-level container)
-							var wrapper = dialog;
-							for (var p = 0; p < 8 && wrapper.parentElement && wrapper.parentElement !== document.body; p++) {
-								if (wrapper.className && typeof wrapper.className === 'string' && wrapper.className.includes('n-modal-container')) {
-									break;
-								}
-								wrapper = wrapper.parentElement;
+		.bt-header>.flex.items-center.gap-20px {
+			margin-left: auto !important;
+		}
+	</style>
+	<meta name="naive-ui-style" />
+	<title>{{session['title']}}</title>
+	<script>
+		window.sites_path = "{{session['config']['sites_path']}}"
+		window.webserver = "{{session['webserver']}}"
+		window.distribution = "{{session['config']['distribution']}}"
+		window.panelVersion = "{{session['version']}}"
+		window.vite_menus = '{{g['menus']}}'
+		window.isSetup = "{{data['isSetup']}}" === 'True' ? true : false
+		window.public_key = "{{data['public_key']}}"
+		window.translations = "{{data['translations']}}"
+		// window.vite_public_icon_info = '{{g['panel_asset']}}'
+		window.vite_public_panel_theme = '{{g['panel_theme']}}'
+
+		var sessionInfo = {
+			title: "{{session['title']}}",
+			username: "{{session['username']}}",
+			statusCode: "{{data['status_code']}}",
+		}
+	</script>
+	<script type="module" crossorigin src="/static/vite/js/index-CmkLJhc0.js?v=1779846436875"></script>
+	<link rel="modulepreload" crossorigin href="/static/vite/js/prismjs-CP0O0FCs.js?v=1779846436875">
+	<link rel="modulepreload" crossorigin href="/static/vite/js/vue-core-gYhvQjN_.js?v=1779846436875">
+	<link rel="modulepreload" crossorigin href="/static/vite/js/naive-ui-DaI_A6CY.js?v=1779846436875">
+	<link rel="stylesheet" crossorigin href="/static/vite/css/prismjs-D-3FhBe_.css?v=1779846436875">
+	<link rel="stylesheet" crossorigin href="/static/vite/css/index-B51nCEFt.css?v=1779846436875">
+	<script
+		type="module">import.meta.url; import("_").catch(() => 1); (async function* () { })().next(); window.__vite_is_modern_browser = true</script>
+	<script
+		type="module">!function () { if (window.__vite_is_modern_browser) return; console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored"); var e = document.getElementById("vite-legacy-polyfill"), n = document.createElement("script"); n.src = e.src, n.onload = function () { System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src')) }, document.body.appendChild(n) }();</script>
+</head>
+
+<body>
+	<a style="display: none" id="panel_debug" data="{{g['debug']}}" data-pyversion="{{g['pyversion']}}"></a>
+	<a style="display: none" id="request_token_head" token="{{session['request_token_head']}}"></a>
+	<a style="display: none" id="recycle_bin" data="{{data['recycle_bin']}}"></a>
+
+	<div id="app"></div>
+	<script>
+		// MutationObserver to remove promotional/AD elements rendered dynamically by Vue
+		(function () {
+			'use strict';
+
+			function removeAdsAndProElements(root) {
+				if (!root) root = document;
+
+				// 1. Remove AD plugin cards in Software/Plugin section
+				// They have a label with text 'AD' inside them
+				var allElements = root.querySelectorAll ? root.querySelectorAll('*') : [];
+				for (var i = 0; i < allElements.length; i++) {
+					var el = allElements[i];
+					// Skip already hidden elements
+					if (el._adHidden) continue;
+
+					// Check for AD tag badge (small element with text 'AD')
+					if (el.children && el.children.length === 0 && el.textContent === 'AD') {
+						// Walk up to find the plugin card container
+						var card = el.parentElement;
+						for (var j = 0; j < 6 && card; j++) {
+							if (card.tagName === 'LI' || (card.className && typeof card.className === 'string' &&
+								(card.className.includes('soft-item') || card.className.includes('plugin') ||
+									card.className.includes('card') || card.className.includes('grid')))) {
+								break;
 							}
-							wrapper.style.setProperty('display', 'none', 'important');
-							if (wrapper.parentElement) {
-								var mask = wrapper.parentElement.querySelector('.n-modal-mask');
-								if (mask) mask.style.setProperty('display', 'none', 'important');
-								
-								// If the parent is a portal wrapper with z-index, hide it so it doesn't block clicks
-								if (wrapper.parentElement.style && wrapper.parentElement.style.zIndex) {
-									wrapper.parentElement.style.setProperty('display', 'none', 'important');
-									wrapper.parentElement.style.setProperty('pointer-events', 'none', 'important');
-								}
-							}
-							dialog._adHidden = true;
+							card = card.parentElement;
+						}
+						if (card && card !== document.body) {
+							card.style.setProperty('display', 'none', 'important');
+							card._adHidden = true;
 						}
 					}
 				}
-				
-				// Run immediately on any available content
-				removeAdsAndProElements(document);
-				
-				// Set up MutationObserver to handle Vue dynamic rendering
-				var observer = new MutationObserver(function(mutations) {
-					var shouldProcess = false;
-					for (var i = 0; i < mutations.length; i++) {
-						if (mutations[i].addedNodes.length > 0) {
-							shouldProcess = true;
-							break;
+
+				// 2. Remove PRO/subscription badge button in the top header bar
+				// It's a button/tag containing text like 'PRO', 'Lifetime', 'Renewal'
+				var buttons = root.querySelectorAll ? root.querySelectorAll('button, .n-button, .n-tag, [class*="badge"], [class*="tag"]') : [];
+				for (var k = 0; k < buttons.length; k++) {
+					var btn = buttons[k];
+					if (btn._adHidden) continue;
+					var txt = btn.textContent || '';
+					// Hide the PRO badge/button and subscription renewal button
+					if ((txt.trim() === 'PRO' || txt.includes('Lifetime') || txt.includes('Renewal') ||
+						txt.includes('Поновлення') || txt.includes('Сумісно на:') ||
+						txt.includes('Compatible') || txt.includes('Upgrade')) &&
+						txt.length < 80) {
+						btn.style.setProperty('display', 'none', 'important');
+						btn._adHidden = true;
+					}
+				}
+
+				// 3. Remove account-state/auth icons in top right of header
+				// These are usually near the user icon or notification bell area
+				var headerBtns = root.querySelectorAll ? root.querySelectorAll('.header-icon, .header-action, [class*="header-btn"], [class*="header-right"] .n-button') : [];
+				for (var l = 0; l < headerBtns.length; l++) {
+					var hBtn = headerBtns[l];
+					if (hBtn._adHidden) continue;
+					var hTxt = (hBtn.textContent || '').trim();
+					if (hTxt === '' || hTxt === 'PRO' || hTxt.includes('Upgrade')) {
+						hBtn.style.setProperty('display', 'none', 'important');
+						hBtn._adHidden = true;
+					}
+				}
+
+				// 4. Fallback search for text nodes containing "Спливає на:" or "Lifetime"
+				var textContainers = root.querySelectorAll ? root.querySelectorAll('span, div') : [];
+				for (var m = 0; m < textContainers.length; m++) {
+					var tc = textContainers[m];
+					if (tc._adHidden || tc.children.length > 2) continue; // skip large containers
+					var ttxt = tc.textContent || '';
+					if ((ttxt.includes('Спливає на:') || ttxt.includes('Lifetime') ||
+						ttxt.includes('Поновлення') || ttxt.includes('Сумісно на:') ||
+						ttxt.includes('Обліковий запис')) &&
+						ttxt.length < 60) {
+						// Hide it and its parent to be safe
+						tc.style.setProperty('display', 'none', 'important');
+						if (tc.parentElement) tc.parentElement.style.setProperty('display', 'none', 'important');
+						tc._adHidden = true;
+					}
+				}
+
+				// 5. Replace Footer Content
+				var footer = root.querySelector ? root.querySelector('#layout-footer, .footer, [class*="layout-footer"]') : null;
+				if (footer && !footer._footerReplaced) {
+					// Only replace if it has the original content (contains aapanel or 2014)
+					if (footer.textContent.includes('aaPanel') || footer.textContent.includes('2014')) {
+						footer.innerHTML = '<div style="display: flex; justify-content: center; align-items: center; height: 52px; color: #999; font-size: 13px;">HomeServer Panel @2026</div>';
+						footer._footerReplaced = true;
+					}
+				}
+
+				// 6. Remove forced "Log in to aaPanel account" modal
+				var dialogs = root.querySelectorAll ? root.querySelectorAll('.n-modal, .n-dialog, .n-card, [role="dialog"]') : [];
+				for (var n = 0; n < dialogs.length; n++) {
+					var dialog = dialogs[n];
+					if (dialog._adHidden) continue;
+					var dTxt = dialog.textContent || '';
+					if (dTxt.includes('Log in to aaPanel account') || dTxt.includes('Register to get') || dTxt.includes('Continue with Google')) {
+						// Find the outermost modal wrapper (Naive UI usually uses a top-level container)
+						var wrapper = dialog;
+						for (var p = 0; p < 8 && wrapper.parentElement && wrapper.parentElement !== document.body; p++) {
+							if (wrapper.className && typeof wrapper.className === 'string' && wrapper.className.includes('n-modal-container')) {
+								break;
+							}
+							wrapper = wrapper.parentElement;
 						}
+						wrapper.style.setProperty('display', 'none', 'important');
+						if (wrapper.parentElement) {
+							var mask = wrapper.parentElement.querySelector('.n-modal-mask');
+							if (mask) mask.style.setProperty('display', 'none', 'important');
+
+							// If the parent is a portal wrapper with z-index, hide it so it doesn't block clicks
+							if (wrapper.parentElement.style && wrapper.parentElement.style.zIndex) {
+								wrapper.parentElement.style.setProperty('display', 'none', 'important');
+								wrapper.parentElement.style.setProperty('pointer-events', 'none', 'important');
+							}
+						}
+						dialog._adHidden = true;
 					}
-					if (shouldProcess) {
-						removeAdsAndProElements(document);
+				}
+			}
+
+			// Run immediately on any available content
+			removeAdsAndProElements(document);
+
+			// Set up MutationObserver to handle Vue dynamic rendering
+			var observer = new MutationObserver(function (mutations) {
+				var shouldProcess = false;
+				for (var i = 0; i < mutations.length; i++) {
+					if (mutations[i].addedNodes.length > 0) {
+						shouldProcess = true;
+						break;
 					}
-				});
-				
-				observer.observe(document.body || document.documentElement, {
-					childList: true,
-					subtree: true
-				});
-				
-				// Also run after short delays to catch late-rendered elements
-				setTimeout(function() { removeAdsAndProElements(document); }, 500);
-				setTimeout(function() { removeAdsAndProElements(document); }, 1500);
-				setTimeout(function() { removeAdsAndProElements(document); }, 3000);
-			})();
-		</script>
-
-		<script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
-		<script nomodule crossorigin id="vite-legacy-polyfill" src="/static/vite/js/polyfills-legacy-Bmu_TDic.js?v=1779846436875"></script>
-		<script nomodule crossorigin id="vite-legacy-entry" data-src="/static/vite/js/index-legacy-CRWb9scH.js?v=1779846436875">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
-	</body>
+				}
+				if (shouldProcess) {
+					removeAdsAndProElements(document);
+				}
+			});
+
+			observer.observe(document.body || document.documentElement, {
+				childList: true,
+				subtree: true
+			});
+
+			// Also run after short delays to catch late-rendered elements
+			setTimeout(function () { removeAdsAndProElements(document); }, 500);
+			setTimeout(function () { removeAdsAndProElements(document); }, 1500);
+			setTimeout(function () { removeAdsAndProElements(document); }, 3000);
+		})();
+	</script>
+
+
+	<script
+		nomodule>!function () { var e = document, t = e.createElement("script"); if (!("noModule" in t) && "onbeforeload" in t) { var n = !1; e.addEventListener("beforeload", (function (e) { if (e.target === t) n = !0; else if (!e.target.hasAttribute("nomodule") || !n) return; e.preventDefault() }), !0), t.type = "module", t.src = ".", e.head.appendChild(t), t.remove() } }();</script>
+	<script nomodule crossorigin id="vite-legacy-polyfill"
+		src="/static/vite/js/polyfills-legacy-Bmu_TDic.js?v=1779846436875"></script>
+	<script nomodule crossorigin id="vite-legacy-entry"
+		data-src="/static/vite/js/index-legacy-CRWb9scH.js?v=1779846436875">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+</body>
+
 </html>
