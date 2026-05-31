@@ -114,7 +114,7 @@
 			"index_2": "Formatbeschreibung:",
 			"index_3": "Stapelformat: Domain {'|'} Website-Titel {'|'} Admin-Konto {'|'} Admin-Passwort {'|'} Präfix",
 			"index_4": "Domänenformat: Unterstützt mehrere Domänen, getrennt durch Kommas (z. B.: a.com,b.com)",
-			"index_7": "z.B. aapanel.com{'|'}mein Blog{'|'}admin{'|'}pass123456{'|'}wp_",
+			"index_7": "z.B. HomeServer Panel.com{'|'}mein Blog{'|'}admin{'|'}pass123456{'|'}wp_",
 			"index_5": "Eine Site pro Zeile. Wenn das Passwort leer ist, generiert das System automatisch ein sicheres Passwort.",
 			"index_6": "Wenn Sie das Präfix wp_ festlegen, generiert das System automatisch ein zufälliges Suffix.",
 			"index_8": "Bitte geben Sie Chargendaten ein",
@@ -182,7 +182,7 @@
 			"index_43": "Bitte schließen und leeren Sie den Cache, bevor Sie den Wartungsmodus aktivieren.",
 			"index_44": "Hinweis: Um zu verhindern, dass die Website durch Indexierungs-Engines herabgestuft wird, aktivieren Sie den Wartungsmodus bitte nicht für längere Zeit.",
 			"index_45": "Empfehlen Sie das Hochladen von HTML-Dateien für Vorlagen und die Verwendung von Daten-URLs für statische Vorlagendateien.",
-			"index_46": "Wenn Sie möchten, dass Ihre Vorlage die Vorlagenkonfigurationsfunktion von aapanel verwendet, können Sie den Wartungsmodus einmal starten und die Datei /wp-content/mintensionce/mintensione-template.html ändern und dabei den Platzhalter „{{}}“ beibehalten."
+			"index_46": "Wenn Sie möchten, dass Ihre Vorlage die Vorlagenkonfigurationsfunktion von HomeServer Panel verwendet, können Sie den Wartungsmodus einmal starten und die Datei /wp-content/mintensionce/mintensione-template.html ändern und dabei den Platzhalter „{{}}“ beibehalten."
 		},
 		"Label": {
 			"index_1": "Passwort zurücksetzen",
@@ -234,7 +234,7 @@
 			"index_5": "Fastcgi -Cache",
 			"index_6": "Weitere Funktionen sind in der Entwicklung und freuen sich auf Ihr Feedback",
 			"index_7": "Jetzt kaufen",
-			"index_8": "Login Aapanel -Konto"
+			"index_8": "Login HomeServer Panel -Konto"
 		},
 		"Sets": {
 			"index_1": "Set erstellen",
@@ -283,7 +283,7 @@
 			"index_6": "Sicherheitstoken",
 			"index_7": "Bitte geben Sie den Verbindungs ​​-Token ein",
 			"index_8": "So fügen Sie die Website mit Sicherheitsschlüssel hinzu, befolgen Sie die nächsten Schritte",
-			"index_9": "Aapanel WP Toolkit",
+			"index_9": "HomeServer Panel WP Toolkit",
 			"index_10": "Laden Sie Plugin auf Ihre Website hoch",
 			"index_11": "Aktivieren Sie Plugin auf Ihrer Website",
 			"index_12": "Klicken Sie auf Ihrer Website /wp-admin/plugins.php auf Ihrer Website /wp-admin/plugins.php anzeigen",

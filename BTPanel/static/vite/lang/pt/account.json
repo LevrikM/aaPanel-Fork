@@ -49,7 +49,7 @@
 			"accountState-721844-12": "Expirado",
 			"accountState-721844-13": "Data de Expiração",
 			"accountState-721844-14": "Observações",
-			"accountState-721844-15": "Login no Sub aaPanel",
+			"accountState-721844-15": "Login no Sub HomeServer Panel",
 			"accountState-721844-16": "Editar",
 			"accountState-721844-17": "Excluir",
 			"accountState-721844-18": "Criando usuário, aguarde...",
@@ -79,7 +79,7 @@
 			"account_533924-6": "Desabilitar",
 			"account_533924-7": "Cota",
 			"account_533924-8": "Subusuários disponíveis: ",
-			"account_533924-9": "A edição aaPanel Pro só pode adicionar até {0} contas！",
+			"account_533924-9": "A edição HomeServer Panel Pro só pode adicionar até {0} contas！",
 			"account_533924-10": "Número de contas",
 			"account_533924-11": "Se a API não estiver habilitada ou 127.0.0.1 não for adicionado à lista branca da API, o serviço de correio do subpainel ficará inutilizável.",
 			"account_533924-12": "Adicionar à lista branca com um clique"
@@ -138,10 +138,10 @@
 			"disk_810348-13": "Habilitando cota de disco, aguarde..."
 		},
 		"Install": {
-			"index_1": "Subconta aaPanel - Múltiplos usuários",
+			"index_1": "Subconta HomeServer Panel - Múltiplos usuários",
 			"index_2": "Cota de recursos",
 			"index_3": "Área de usuário separada",
-			"index_4": "Tão simples quanto aaPanel",
+			"index_4": "Tão simples quanto HomeServer Panel",
 			"index_5": "Log de Instalação",
 			"index_6": "Instalando, aguarde...",
 			"index_7": "Servidor Web: {0}, por favor ajuste o Servidor Web atual para {1}, faça backup dos dados relacionados antes do ajuste.",

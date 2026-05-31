@@ -114,7 +114,7 @@
 			"index_2": "Deskripsi format:",
 			"index_3": "Format batch: Domain {'|'} Judul Situs Web {'|'} Akun Admin {'|'} Kata Sandi Admin {'|'} Awalan",
 			"index_4": "Format domain: Mendukung banyak domain, dipisahkan dengan koma (misalnya: a.com,b.com)",
-			"index_7": "misalnya aapanel.com{'|'}blog saya{'|'}admin{'|'}pass123456{'|'}wp_",
+			"index_7": "misalnya HomeServer Panel.com{'|'}blog saya{'|'}admin{'|'}pass123456{'|'}wp_",
 			"index_5": "Satu situs per baris. Jika kata sandi kosong, sistem secara otomatis akan menghasilkan kata sandi yang kuat.",
 			"index_6": "Jika Anda menyetel awalan wp_, sistem akan secara otomatis menghasilkan akhiran acak.",
 			"index_8": "Silakan masukkan data kumpulan",
@@ -182,7 +182,7 @@
 			"index_43": "Harap tutup dan kosongkan cache sebelum mengaktifkan mode pemeliharaan.",
 			"index_44": "Catatan: Untuk menghindari penurunan peringkat situs web oleh mesin pengindeksan, mohon jangan mengaktifkan mode pemeliharaan dalam waktu lama.",
 			"index_45": "Merekomendasikan untuk mengunggah file HTML untuk templat, dan menggunakan URL data untuk file templat statis.",
-			"index_46": "Jika Anda ingin templat Anda menggunakan fungsi konfigurasi templat aapanel, Anda bisa memulai mode pemeliharaan satu kali dan memodifikasi file /wp-content/mintensionce/mintensione-template.html, dengan tetap mempertahankan placeholder '{{}}'."
+			"index_46": "Jika Anda ingin templat Anda menggunakan fungsi konfigurasi templat HomeServer Panel, Anda bisa memulai mode pemeliharaan satu kali dan memodifikasi file /wp-content/mintensionce/mintensione-template.html, dengan tetap mempertahankan placeholder '{{}}'."
 		},
 		"Label": {
 			"index_1": "Setel ulang kata sandi",
@@ -234,7 +234,7 @@
 			"index_5": "Cache Fastcgi",
 			"index_6": "Lebih banyak fitur yang sedang dikembangkan, menantikan umpan balik Anda",
 			"index_7": "Beli sekarang",
-			"index_8": "Login Akun Aapanel"
+			"index_8": "Login Akun HomeServer Panel"
 		},
 		"Sets": {
 			"index_1": "Buat set",
@@ -283,7 +283,7 @@
 			"index_6": "Token keamanan",
 			"index_7": "Harap masukkan token koneksi",
 			"index_8": "Cara menambahkan situs web dengan kunci keamanan, ikuti langkah selanjutnya",
-			"index_9": "Aapanel WP Toolkit",
+			"index_9": "HomeServer Panel WP Toolkit",
 			"index_10": "Unggah plugin ke situs web Anda",
 			"index_11": "Aktifkan plugin di situs web Anda",
 			"index_12": "Klik Lihat Tautan Kunci Keamanan di situs web Anda /wp-admin/plugins.php halaman",

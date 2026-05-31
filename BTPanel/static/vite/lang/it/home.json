@@ -131,7 +131,7 @@
 			"index_12": "Richiedi la versione beta di Linux",
 			"index_13": "Sei sicuro di passare dalla beta alla versione stabile?",
 			"index_14": "[Linux {0}] - Aggiornamento della versione",
-			"index_15": "Nuova versione di aapanel disponibile",
+			"index_15": "Nuova versione di HomeServer Panel disponibile",
 			"index_16": "Tempo di aggiornamento: {0}",
 			"index_17": "Ultima versione: ",
 			"index_18": "Ignora gli aggiornamenti",
@@ -171,7 +171,7 @@
 		},
 		"Restart": {
 			"index_1": "RIAVVIA SERVER",
-			"index_2": "RIAVVIA AAPANEL",
+			"index_2": "RIAVVIA HomeServer Panel",
 			"index_3": "Riavvia il pannello",
 			"index_4": "Il pannello si riavvierà, vuoi continuare?",
 			"index_5": "ATTENZIONE, se questo server è un contenitore, si prega di annullare!",

@@ -15,7 +15,7 @@
 		},
 		"Feedback": {
 			"index_7": "Retour",
-			"index_1": "Collection de rétroaction de la demande AAPANEL",
+			"index_1": "Collection de rétroaction de la demande HomeServer Panel",
 			"index_2": "Si vous rencontrez des problèmes ou des fonctions imparfaites pendant l'utilisation, veuillez décrire",
 			"index_3": "Vos problèmes ou vos besoins en détail, nous ferons de notre mieux pour résoudre ou améliorer",
 			"index_4": "Nous accordons une attention particulière à vos commentaires sur les exigences et nous effectuons des examens hebdomadaires réguliers. J'espère que je pourrai mieux vous aider",
@@ -87,12 +87,12 @@
 			"index_47": "Payer maintenant"
 		},
 		"BindAccount": {
-			"index_1": "Lier le compte Aapanel",
+			"index_1": "Lier le compte HomeServer Panel",
 			"index_2": "Pas de compte, allez vous inscrire",
 			"index_3": "Se connecter",
 			"index_4": "Veuillez saisir votre adresse e-mail",
 			"index_5": "Veuillez saisir votre mot de passe",
-			"index_6": "Lier le compte Aapanel",
+			"index_6": "Lier le compte HomeServer Panel",
 			"index_7": "Votre adresse e-mail",
 			"index_8": "Votre mot de passe"
 		},

@@ -116,7 +116,7 @@
 			"index_4": "域名格式：支援多域名，使用分隔分隔 (如: a.com,b.com)",
 			"index_5": "每行一個站點。若不填寫密碼，系統將自動產生強密碼。",
 			"index_6": "若填入出口wp_，系統將自動產生隨機後綴。",
-			"index_7": "譯文：aapanel.com{'|'}我的部落格{'|'}admin{'|'}pass123456{'|'}wp_",
+			"index_7": "譯文：HomeServer Panel.com{'|'}我的部落格{'|'}admin{'|'}pass123456{'|'}wp_",
 			"index_8": "請輸入大量數據",
 			"placeholder": "domain.com{'|'}網站標題{'|'}管理員帳號{'|'}密碼{'|'}wp_"
 		},
@@ -182,7 +182,7 @@
 			"index_43": "請在開啟維護模式前關閉並清除緩存。",
 			"index_44": "注意：為避免網站被索引引擎降級，請不要長時間啟用維護模式。",
 			"index_45": "建議上傳HTML文件作為模板，並使用數據URL作為模板的靜態文件。",
-			"index_46": "如果您希望您的模板使用aaPanel的模板配置功能，您可以啟動維護模式一次並修改/wp-content/mintensionce/mintensione-template.html文件，保留'{{}}'佔位符。"
+			"index_46": "如果您希望您的模板使用HomeServer Panel的模板配置功能，您可以啟動維護模式一次並修改/wp-content/mintensionce/mintensione-template.html文件，保留'{{}}'佔位符。"
 		},
 		"Label": {
 			"index_1": "重置密碼",
@@ -234,7 +234,7 @@
 			"index_5": "FastCGI緩存",
 			"index_6": "正在開發更多功能，期待您的反饋",
 			"index_7": "立即購買",
-			"index_8": "登錄Aapanel賬戶"
+			"index_8": "登錄HomeServer Panel賬戶"
 		},
 		"Sets": {
 			"index_1": "創建集合包",
@@ -283,7 +283,7 @@
 			"index_6": "安全令牌",
 			"index_7": "請輸入連接令牌",
 			"index_8": "如何添加帶有安全密鑰的網站，遵循下面的步驟",
-			"index_9": "aapanel wp工具包",
+			"index_9": "HomeServer Panel wp工具包",
 			"index_10": "將插件上傳到您的網站",
 			"index_11": "在您的網站上激活插件",
 			"index_12": "單擊您網站上的安全鍵鏈接 /wp-admin/plugins.php頁面",

@@ -184,7 +184,7 @@
 			"index_35": "Dizini Yedekle",
 			"index_36": "Webshell",
 			"index_37": "Zamanı Senkronize Et",
-			"index_38": "Varsayılan olarak zamanı NTP sunucusundan senkronize eder ve başarısız olduğunda aapanel.com'un sunucu zamanını senkronize eder.",
+			"index_38": "Varsayılan olarak zamanı NTP sunucusundan senkronize eder ve başarısız olduğunda HomeServer Panel.com'un sunucu zamanını senkronize eder.",
 			"index_39": "RAM'i Boşalt",
 			"index_40": "PHP, MYSQL, PURE-FTPD, APACHE, NGINX'in bellek kullanımını serbest bırakır, her gün gece yarısı çalıştırılması önerilir!",
 			"index_41": "URL'ye Eriş",

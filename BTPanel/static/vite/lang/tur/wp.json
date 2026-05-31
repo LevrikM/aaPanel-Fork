@@ -171,7 +171,7 @@
 			"index_43": "Bakım modunu etkinleştirmeden önce önbelleği kapatın ve temizleyin.",
 			"index_44": "Not: Arama motorları tarafından site sıralamasının düşürülmesini önlemek için bakım modunu uzun süre etkinleştirmeyin.",
 			"index_45": "Şablonlar için HTML dosyaları yüklemeniz ve statik şablon dosyaları için veri URL'leri kullanmanız önerilir.",
-			"index_46": "Şablonunuzun aaPanel şablon yapılandırma özelliğini kullanmasını istiyorsanız, bakım modunu bir kez çalıştırabilir ve '{{}}'yer tutucusunu koruyarak /wp-content/mintensionce/mintensione-template.html dosyasını değiştirebilirsiniz."
+			"index_46": "Şablonunuzun HomeServer Panel şablon yapılandırma özelliğini kullanmasını istiyorsanız, bakım modunu bir kez çalıştırabilir ve '{{}}'yer tutucusunu koruyarak /wp-content/mintensionce/mintensione-template.html dosyasını değiştirebilirsiniz."
 		},
 		"Label": {
 			"index_1": "Şifreyi sıfırla",
@@ -223,7 +223,7 @@
 			"index_5": "Fastcgi Önbelleği",
 			"index_6": "Daha fazla özellik geliştiriliyor, geri bildirimlerinizi bekliyoruz",
 			"index_7": "Şimdi satın al",
-			"index_8": "aaPanel hesabına giriş yap"
+			"index_8": "HomeServer Panel hesabına giriş yap"
 		},
 		"Sets": {
 			"index_1": "Set Oluştur",
@@ -272,7 +272,7 @@
 			"index_6": "Güvenlik Jetonu",
 			"index_7": "Lütfen bağlantı jetonunu girin",
 			"index_8": "Güvenlik anahtarıyla web sitesi nasıl eklenir, sonraki adımları izleyin",
-			"index_9": "aaPanel WP Araç Seti",
+			"index_9": "HomeServer Panel WP Araç Seti",
 			"index_10": "Eklentiyi web sitenize yükleyin",
 			"index_11": "Eklentiyi web sitenizde etkinleştirin",
 			"index_12": "Web sitenizin /wp-admin/plugins.php sayfasındaki Güvenlik Anahtarını Görüntüle bağlantısına tıklayın",
@@ -289,7 +289,7 @@
 			"index_2": "Format description:",
 			"index_3": "Batch format: Domain {'|'} Website Title {'|'} Admin Account {'|'} Admin Password {'|'} Prefix",
 			"index_4": "Domain format: Support multiple domains, separated by commas (e.g.: a.com,b.com)",
-			"index_7": "e.g. aapanel.com{'|'}my blog{'|'}admin{'|'}pass123456{'|'}wp_",
+			"index_7": "e.g. HomeServer Panel.com{'|'}my blog{'|'}admin{'|'}pass123456{'|'}wp_",
 			"index_5": "One site per line. If the password is empty, the system will automatically generate a strong password.",
 			"index_6": "If you set the prefix wp_, the system will automatically generate a random suffix.",
 			"index_8": "Please enter batch data",

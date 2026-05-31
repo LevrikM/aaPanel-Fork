@@ -76,7 +76,7 @@
 				"form_5": "Chỉ định IP",
 				"form_6": "Vui lòng nhập IP được chỉ định, nhiều IPS nên được phân tách bằng \",\" hoặc ngắt dòng. ví dụ. 192.168.1.1, 192.168.1.2",
 				"form_7": "Chỉ định tên miền",
-				"form_8": "Vui lòng nhập tên miền được chỉ định. ví dụ. www.aapanel.com",
+				"form_8": "Vui lòng nhập tên miền được chỉ định. ví dụ. www.HomeServer Panel.com",
 				"form_9": "Chiến lược",
 				"form_10": "Phương hướng",
 				"form_11": "Nhận xét",
@@ -315,7 +315,7 @@
 			"Index_10": "Nhật ký hoạt động"
 		},
 		"Conf": {
-			"Index_1": "Bảo vệ lực lượng vũ phu Aapanel",
+			"Index_1": "Bảo vệ lực lượng vũ phu HomeServer Panel",
 			"Index_2": "Địa chỉ IP hiện tại của bạn [{0}] không nằm trong danh sách trắng",
 			"Index_3": "Thêm vào danh sách trắng",
 			"Index_4": "Bạn nên bật tính năng chống vi khuẩn. Nó sẽ bảo mật tốt hơn máy chủ. Bạn có muốn tiếp tục?",
@@ -472,7 +472,7 @@
 				"cancelScan": "Hủy quét",
 				"scanNow": "Quét ngay",
 				"title": "Bảo mật trang web thông minh",
-				"desc": "Bảo mật trang web dựa trên công cụ mạnh mẽ miễn phí: phát hiện rủi ro chỉ bằng một cú nhấp chuột, đề xuất khắc phục/tối ưu hóa tự động aaPanel, tăng cường trang web dễ dàng.",
+				"desc": "Bảo mật trang web dựa trên công cụ mạnh mẽ miễn phí: phát hiện rủi ro chỉ bằng một cú nhấp chuột, đề xuất khắc phục/tối ưu hóa tự động HomeServer Panel, tăng cường trang web dễ dàng.",
 				"noPhpSite": "Không tìm thấy trang web PHP nào"
 			},
 			"Metric": {

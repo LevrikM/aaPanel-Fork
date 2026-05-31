@@ -76,7 +76,7 @@
 				"form_5": "Tentukan IP",
 				"form_6": "Harap masukkan IP yang ditentukan, beberapa IP harus dipisahkan oleh \",\" atau istirahat garis. misalnya 192.168.1.1, 192.168.1.2",
 				"form_7": "Tentukan domain",
-				"form_8": "Harap masukkan domain yang ditentukan. misalnya www.aapanel.com",
+				"form_8": "Harap masukkan domain yang ditentukan. misalnya www.HomeServer Panel.com",
 				"form_9": "Strategi",
 				"form_10": "Arah",
 				"form_11": "Perkataan",
@@ -315,7 +315,7 @@
 			"Index_10": "Log Operasi"
 		},
 		"Conf": {
-			"Index_1": "Perlindungan Brute Force Aapanel",
+			"Index_1": "Perlindungan Brute Force HomeServer Panel",
 			"Index_2": "Alamat IP Anda saat ini [{0}] tidak ada di daftar putih",
 			"Index_3": "Tambahkan ke WhiteList",
 			"Index_4": "Dianjurkan untuk menghidupkan fitur antiviolensi. Ini akan lebih mengamankan server. Apakah Anda ingin melanjutkan?",
@@ -472,7 +472,7 @@
 				"cancelScan": "Batalkan Pemindaian",
 				"scanNow": "Pindai Sekarang",
 				"title": "Keamanan Situs Web Cerdas",
-				"desc": "Keamanan situs web gratis berbasis mesin yang tangguh: deteksi risiko sekali klik, saran pengoptimalan/remediasi otomatis aaPanel, pengerasan situs web yang mudah.",
+				"desc": "Keamanan situs web gratis berbasis mesin yang tangguh: deteksi risiko sekali klik, saran pengoptimalan/remediasi otomatis HomeServer Panel, pengerasan situs web yang mudah.",
 				"noPhpSite": "Tidak ada situs web PHP yang ditemukan"
 			},
 			"Metric": {

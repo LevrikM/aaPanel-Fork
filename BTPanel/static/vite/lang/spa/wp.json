@@ -114,7 +114,7 @@
 			"index_2": "Descripción del formato:",
 			"index_3": "Formato por lotes: Dominio {'|'} Título del sitio web {'|'} Cuenta de administrador {'|'} Contraseña de administrador {'|'} Prefijo",
 			"index_4": "Formato de dominio: admite múltiples dominios, separados por comas (por ejemplo: a.com,b.com)",
-			"index_7": "por ej. aapanel.com{'|'}mi blog{'|'}admin{'|'}contraseña123456{'|'}wp_",
+			"index_7": "por ej. HomeServer Panel.com{'|'}mi blog{'|'}admin{'|'}contraseña123456{'|'}wp_",
 			"index_5": "Un sitio por línea. Si la contraseña está vacía, el sistema generará automáticamente una contraseña segura.",
 			"index_6": "Si configura el prefijo wp_, el sistema generará automáticamente un sufijo aleatorio.",
 			"index_8": "Por favor ingrese los datos del lote",
@@ -182,7 +182,7 @@
 			"index_43": "Cierre y borre el caché antes de activar el modo de mantenimiento.",
 			"index_44": "Nota: Para evitar que los motores de indexación degraden el sitio web, no habilite el modo de mantenimiento durante un período prolongado.",
 			"index_45": "Se recomienda cargar archivos HTML para plantillas y utilizar URL de datos para archivos estáticos de plantillas.",
-			"index_46": "Si desea que su plantilla utilice la función de configuración de plantilla de aapanel, puede iniciar el modo de mantenimiento una vez y modificar el archivo /wp-content/mintensionce/mintensione-template.html, manteniendo el marcador de posición '{{}}'."
+			"index_46": "Si desea que su plantilla utilice la función de configuración de plantilla de HomeServer Panel, puede iniciar el modo de mantenimiento una vez y modificar el archivo /wp-content/mintensionce/mintensione-template.html, manteniendo el marcador de posición '{{}}'."
 		},
 		"Label": {
 			"index_1": "Restablecer contraseña",
@@ -234,7 +234,7 @@
 			"index_5": "Caché fastcgi",
 			"index_6": "Hay más características en desarrollo, esperando sus comentarios",
 			"index_7": "Comprar ahora",
-			"index_8": "Iniciar cuenta de AAPANEL"
+			"index_8": "Iniciar cuenta de HomeServer Panel"
 		},
 		"Sets": {
 			"index_1": "Crear conjunto",
@@ -283,7 +283,7 @@
 			"index_6": "Token de seguridad",
 			"index_7": "Ingrese el token de conexión",
 			"index_8": "Cómo agregar el sitio web con la clave de seguridad, siga los siguientes pasos",
-			"index_9": "kit de herramientas WP de AAPANEL",
+			"index_9": "kit de herramientas WP de HomeServer Panel",
 			"index_10": "Subir complemento en su sitio web",
 			"index_11": "Active el complemento en su sitio web",
 			"index_12": "Haga clic en Ver enlace Clave de seguridad en su sitio web /wp-admin/plugins.php Página",

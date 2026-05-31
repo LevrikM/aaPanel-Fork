@@ -76,7 +76,7 @@
 				"form_5": "IP Belirt",
 				"form_6": "Lütfen belirtilen IP'yi girin. Birden fazla IP, \",\" ile veya satır sonlarıyla ayrılmalıdır. Örn: 192.168.1.1, 192.168.1.2",
 				"form_7": "Alan Adı Belirt",
-				"form_8": "Lütfen belirtilen alan adını girin. Örn: www.aapanel.com",
+				"form_8": "Lütfen belirtilen alan adını girin. Örn: www.HomeServer Panel.com",
 				"form_9": "Strateji",
 				"form_10": "Yön",
 				"form_11": "Açıklamalar",
@@ -315,7 +315,7 @@
 			"Index_10": "İşlem günlükleri"
 		},
 		"Conf": {
-			"Index_1": "aaPanel Kaba Kuvvet Koruması",
+			"Index_1": "HomeServer Panel Kaba Kuvvet Koruması",
 			"Index_2": "Mevcut IP adresiniz [{0}] beyaz listede değil",
 			"Index_3": "Beyaz Listeye Ekle",
 			"Index_4": "Kaba kuvvet önleme özelliğini açmanız önerilir. Sunucuyu daha iyi güvence altına alacaktır. Devam etmek istiyor musunuz?",
@@ -472,7 +472,7 @@
 				"cancelScan": "Cancel Scan",
 				"scanNow": "Scan Now",
 				"title": "Intelligent Website Security",
-				"desc": "Free website security powered by a robust engine. With one click you can check for website risk signals; aaPanel automatically provides optimization and remediation suggestions so you can harden your site with simple operations.",
+				"desc": "Free website security powered by a robust engine. With one click you can check for website risk signals; HomeServer Panel automatically provides optimization and remediation suggestions so you can harden your site with simple operations.",
 				"noPhpSite": "No PHP websites found"
 			},
 			"Metric": {

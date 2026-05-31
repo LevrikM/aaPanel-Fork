@@ -163,7 +163,7 @@
 	"213cb47719d7d95e6d4ac0c023077698": "Répertoire de sauvegarde",
 	"d985c8ef9ce347ea05138c2c660162d4": "Boutique",
 	"52e2e97d44cef7498a6ab300c59378ec": "Temps de synchronisation",
-	"f16738eb14e338663ce083aea1168302": "Synchroniser l'heure du serveur NTP par défaut, et synchronisera l'heure du serveur de aapanel.com en cas d'échec.",
+	"f16738eb14e338663ce083aea1168302": "Synchroniser l'heure du serveur NTP par défaut, et synchronisera l'heure du serveur de HomeServer Panel.com en cas d'échec.",
 	"d22b4455f9d4e4783ff7f030f42feca3": "Bélier gratuit",
 	"6163f52c564e8b1fa597a63b60922233": "Libérez l'empreinte mémoire de PHP, MySQL, Pure-FTPD, Apache, Nginx, il est recommandé de l'exécuter à minuit tous les jours!",
 	"a63c4434a8943a075c04ebdf1b54a13e": "URL d'accès",
@@ -204,5 +204,5 @@
 	"1366ea178d5982a458473a26d2497704": "À partir de la minute 0 de chaque heure et exécuté toutes les {0} minutes",
 	"39aba25ea2402e1013ebe54be1c7acc8": "Exécuté toutes les {0} secondes",
 	"b7b5c32036d1bb9dd91e97886fc1b1f3": "Planification des tâches",
-	"aac027ec9e38230130244e0397eaac6d": "Synchronisez l'heure du serveur NTP par défaut et synchronisera le temps du serveur d'AAPanel.com en cas d'échec."
+	"aac027ec9e38230130244e0397eaac6d": "Synchronisez l'heure du serveur NTP par défaut et synchronisera le temps du serveur d'HomeServer Panel.com en cas d'échec."
 }

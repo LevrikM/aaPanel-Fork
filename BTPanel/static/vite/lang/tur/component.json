@@ -15,7 +15,7 @@
 		},
 		"Feedback": {
 			"index_7": "Geri bildirim",
-			"index_1": "aaPanel talep ve geri bildirim toplama",
+			"index_1": "HomeServer Panel talep ve geri bildirim toplama",
 			"index_2": "Kullanım sırasında herhangi bir sorunla veya eksik bir özellikle karşılaşırsanız, lütfen",
 			"index_3": "sorunlarınızı veya ihtiyaçlarınızı bize ayrıntılı olarak açıklayın, çözmek veya geliştirmek için elimizden geleni yapacağız",
 			"index_4": "Gereksinim geri bildirimlerinize özel önem veriyoruz ve düzenli olarak haftalık gereksinim incelemeleri yapıyoruz. Umarım size daha iyi yardımcı olabilirim",
@@ -87,12 +87,12 @@
 			"index_47": "Şimdi Öde"
 		},
 		"BindAccount": {
-			"index_1": "aaPanel hesabını bağla",
+			"index_1": "HomeServer Panel hesabını bağla",
 			"index_2": "Hesabınız yok mu, kaydolun",
 			"index_3": "Giriş yap",
 			"index_4": "Lütfen e-posta adresinizi girin",
 			"index_5": "Lütfen şifrenizi girin",
-			"index_6": "aaPanel hesabını bağla",
+			"index_6": "HomeServer Panel hesabını bağla",
 			"index_7": "E-posta adresiniz",
 			"index_8": "Şifreniz"
 		},

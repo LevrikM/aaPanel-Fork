@@ -171,7 +171,7 @@
 			"index_43": "Chiudi e svuota la cache prima di attivare la modalità manutenzione.",
 			"index_44": "Nota: Per evitare il declassamento del ranking del sito da parte dei motori di ricerca, non attivare la modalità manutenzione per un lungo periodo.",
 			"index_45": "Si consiglia di caricare file HTML per i modelli e utilizzare URL di dati per i file di modelli statici.",
-			"index_46": "Se desideri che il tuo modello utilizzi la funzione di configurazione del modello aaPanel, puoi eseguire la modalità manutenzione una volta e modificare il file /wp-content/mintensionce/mintensione-template.html mantenendo il segnaposto '{{}}'."
+			"index_46": "Se desideri che il tuo modello utilizzi la funzione di configurazione del modello HomeServer Panel, puoi eseguire la modalità manutenzione una volta e modificare il file /wp-content/mintensionce/mintensione-template.html mantenendo il segnaposto '{{}}'."
 		},
 		"Label": {
 			"index_1": "Reimpostare la password",
@@ -223,7 +223,7 @@
 			"index_5": "Cache Fastcgi",
 			"index_6": "Altre funzionalità sono in fase di sviluppo, in attesa del tuo feedback",
 			"index_7": "Acquista ora",
-			"index_8": "Accedi Account Aapanel"
+			"index_8": "Accedi Account HomeServer Panel"
 		},
 		"Sets": {
 			"index_1": "Crea set",
@@ -272,7 +272,7 @@
 			"index_6": "Token di sicurezza",
 			"index_7": "Inserisci il token di connessione",
 			"index_8": "Come aggiungere il sito Web con la chiave di sicurezza, segui i passaggi successivi",
-			"index_9": "Aapanel WP Toolkit",
+			"index_9": "HomeServer Panel WP Toolkit",
 			"index_10": "Carica plugin sul tuo sito web",
 			"index_11": "Attiva il plugin sul tuo sito web",
 			"index_12": "Fai clic su Visualizza il collegamento chiave di sicurezza sul tuo sito Web /wp-admin/plugins.php pagina",
@@ -289,7 +289,7 @@
 			"index_2": "Format description:",
 			"index_3": "Batch format: Domain {'|'} Website Title {'|'} Admin Account {'|'} Admin Password {'|'} Prefix",
 			"index_4": "Domain format: Support multiple domains, separated by commas (e.g.: a.com,b.com)",
-			"index_7": "e.g. aapanel.com{'|'}my blog{'|'}admin{'|'}pass123456{'|'}wp_",
+			"index_7": "e.g. HomeServer Panel.com{'|'}my blog{'|'}admin{'|'}pass123456{'|'}wp_",
 			"index_5": "One site per line. If the password is empty, the system will automatically generate a strong password.",
 			"index_6": "If you set the prefix wp_, the system will automatically generate a random suffix.",
 			"index_8": "Please enter batch data",

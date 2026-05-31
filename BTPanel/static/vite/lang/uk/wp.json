@@ -171,7 +171,7 @@
 			"index_43": "Будь ласка, закрийте і очистіть кеш перед тим, як увімкнути режим обслуговування.",
 			"index_44": "Примітка: Щоб уникнути зниження рейтингу сайту індексаційними системами, не вмикайте режим технічного обслуговування на тривалий час.",
 			"index_45": "Рекомендуємо завантажувати HTML-файли для шаблонів і використовувати URL-адреси даних для статичних файлів шаблонів.",
-			"index_46": "Якщо ви хочете, щоб ваш шаблон використовував функцію конфігурації шаблонів aapanel, ви можете один раз запустити режим обслуговування і змінити файл /wp-content/mintensionce/mintensione-template.html, зберігши заповнювач '{{}}'."
+			"index_46": "Якщо ви хочете, щоб ваш шаблон використовував функцію конфігурації шаблонів HomeServer Panel, ви можете один раз запустити режим обслуговування і змінити файл /wp-content/mintensionce/mintensione-template.html, зберігши заповнювач '{{}}'."
 		},
 		"Label": {
 			"index_1": "Скинути пароль",
@@ -223,7 +223,7 @@
 			"index_5": "Кеш FastCGI",
 			"index_6": "Інші функції в розробці. Чекаємо на ваші відгуки",
 			"index_7": "Купити зараз",
-			"index_8": "Увійти в обліковий запис aaPanel"
+			"index_8": "Увійти в обліковий запис HomeServer Panel"
 		},
 		"Sets": {
 			"index_1": "Створити набір",
@@ -272,7 +272,7 @@
 			"index_6": "Токен безпеки",
 			"index_7": "Введіть токен підключення",
 			"index_8": "Щоб додати сайт з ключем безпеки, виконайте наступні кроки",
-			"index_9": "Інструментарій aaPanel WP",
+			"index_9": "Інструментарій HomeServer Panel WP",
 			"index_10": "Завантажте плагін на свій сайт",
 			"index_11": "Активуйте плагін на своєму сайті",
 			"index_12": "Натисніть посилання «Переглянути ключ безпеки» на сторінці /wp-admin/plugins.php вашого сайту",
@@ -289,7 +289,7 @@
 			"index_2": "Format description:",
 			"index_3": "Batch format: Domain {'|'} Website Title {'|'} Admin Account {'|'} Admin Password {'|'} Prefix",
 			"index_4": "Domain format: Support multiple domains, separated by commas (e.g.: a.com,b.com)",
-			"index_7": "e.g. aapanel.com{'|'}my blog{'|'}admin{'|'}pass123456{'|'}wp_",
+			"index_7": "e.g. HomeServer Panel.com{'|'}my blog{'|'}admin{'|'}pass123456{'|'}wp_",
 			"index_5": "One site per line. If the password is empty, the system will automatically generate a strong password.",
 			"index_6": "If you set the prefix wp_, the system will automatically generate a random suffix.",
 			"index_8": "Please enter batch data",

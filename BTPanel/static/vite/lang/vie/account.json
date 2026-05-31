@@ -49,7 +49,7 @@
 			"accountState-721844-12": "Hết hạn",
 			"accountState-721844-13": "Ngày hết hạn",
 			"accountState-721844-14": "Nhận xét",
-			"accountState-721844-15": "Đăng nhập Sub Aapanel",
+			"accountState-721844-15": "Đăng nhập Sub HomeServer Panel",
 			"accountState-721844-16": "Biên tập",
 			"accountState-721844-17": "Xóa bỏ",
 			"accountState-721844-18": "Tạo người dùng, vui lòng đợi ...",
@@ -79,7 +79,7 @@
 			"account_533924-6": "Vô hiệu hóa",
 			"account_533924-7": "Hạn ngạch",
 			"account_533924-8": "Người dùng phụ có sẵn: ",
-			"account_533924-9": "Phiên bản Aapanel Pro chỉ có thể thêm vào tài khoản {0}",
+			"account_533924-9": "Phiên bản HomeServer Panel Pro chỉ có thể thêm vào tài khoản {0}",
 			"account_533924-10": "Số lượng tài khoản",
 			"account_533924-11": "Nếu API không được bật hoặc 127.0.0.1 không được thêm vào danh sách trắng API, bưu điện phụ sẽ không thể sử dụng được.",
 			"account_533924-12": "Một lần nhấp vào làm trắng"
@@ -138,10 +138,10 @@
 			"disk_810348-13": "Cho phép hạn ngạch đĩa, vui lòng đợi ..."
 		},
 		"Install": {
-			"index_1": "Tài khoản phụ Aapanel - Nhiều người dùng",
+			"index_1": "Tài khoản phụ HomeServer Panel - Nhiều người dùng",
 			"index_2": "Hạn ngạch tài nguyên",
 			"index_3": "Khu vực người dùng riêng biệt",
-			"index_4": "Đơn giản như Aapanel",
+			"index_4": "Đơn giản như HomeServer Panel",
 			"index_5": "Nhật ký cài đặt",
 			"index_6": "Cài đặt, vui lòng đợi ...",
 			"index_7": "Máy chủ web: {0}, vui lòng điều chỉnh máy chủ web hiện tại thành {1}, vui lòng sao lưu dữ liệu liên quan trước khi điều chỉnh.",

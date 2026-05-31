@@ -49,7 +49,7 @@
 			"accountState-721844-12": "만료",
 			"accountState-721844-13": "만료일",
 			"accountState-721844-14": "메모",
-			"accountState-721844-15": "로그인 Sub Aapanel",
+			"accountState-721844-15": "로그인 Sub HomeServer Panel",
 			"accountState-721844-16": "편집하다",
 			"accountState-721844-17": "삭제",
 			"accountState-721844-18": "사용자 생성, 기다려주세요 ...",
@@ -79,7 +79,7 @@
 			"account_533924-6": "비활성화",
 			"account_533924-7": "할당량",
 			"account_533924-8": "사용 가능한 하위 사용자 : ",
-			"account_533924-9": "Aapanel Pro Edition은 {0} 계정에만 추가 할 수 있습니다.",
+			"account_533924-9": "HomeServer Panel Pro Edition은 {0} 계정에만 추가 할 수 있습니다.",
 			"account_533924-10": "계정 수",
 			"account_533924-11": "API가 활성화되지 않았거나 127.0.0.1이 API 화이트리스트에 추가되지 않으면 서브 패널 우체국을 사용할 수 없습니다.",
 			"account_533924-12": "원클릭 수정"
@@ -138,10 +138,10 @@
 			"disk_810348-13": "디스크 할당량 활성화, 기다려주세요 ..."
 		},
 		"Install": {
-			"index_1": "Aapanel 하위 계정",
+			"index_1": "HomeServer Panel 하위 계정",
 			"index_2": "리소스 할당량",
 			"index_3": "별도의 사용자 영역",
-			"index_4": "Aapanel만큼 간단합니다",
+			"index_4": "HomeServer Panel만큼 간단합니다",
 			"index_5": "설치 로그",
 			"index_6": "설치, 잠깐만 ...",
 			"index_7": "웹 서버 : {0}, 현재 웹 서버를 {1}로 조정하세요. 조정하기 전에 관련 데이터를 백업하세요.",

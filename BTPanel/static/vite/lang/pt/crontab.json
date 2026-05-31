@@ -184,7 +184,7 @@
 			"index_35": "Diretório de Backup",
 			"index_36": "Webshell",
 			"index_37": "Sincronizar Hora",
-			"index_38": "Sincronize a hora do servidor NTP por padrão, e sincronizará a hora do servidor de aapanel.com quando falhar.",
+			"index_38": "Sincronize a hora do servidor NTP por padrão, e sincronizará a hora do servidor de HomeServer Panel.com quando falhar.",
 			"index_39": "Liberar RAM",
 			"index_40": "Libere a pegada de memória de PHP, MYSQL, PURE-FTPD, APACHE, NGINX, é recomendado executá-lo à meia-noite todos os dias!",
 			"index_41": "Acessar URL",

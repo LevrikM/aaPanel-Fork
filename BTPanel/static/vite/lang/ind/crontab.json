@@ -184,7 +184,7 @@
 			"index_35": "Direktori cadangan",
 			"index_36": "Webshell",
 			"index_37": "Waktu sinkronisasi",
-			"index_38": "Menyinkronkan waktu dari server NTP secara default, dan akan menyinkronkan waktu server Aapanel.com saat gagal.",
+			"index_38": "Menyinkronkan waktu dari server NTP secara default, dan akan menyinkronkan waktu server HomeServer Panel.com saat gagal.",
 			"index_39": "Ram gratis",
 			"index_40": "Lepaskan jejak memori PHP, MySQL, Pure-FTPD, Apache, Nginx, disarankan untuk mengeksekusinya di tengah malam setiap hari!",
 			"index_41": "URL akses",

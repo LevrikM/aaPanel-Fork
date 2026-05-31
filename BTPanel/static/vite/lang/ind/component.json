@@ -15,7 +15,7 @@
 		},
 		"Feedback": {
 			"index_7": "Umpan Balik",
-			"index_1": "Koleksi umpan balik permintaan Aapanel",
+			"index_1": "Koleksi umpan balik permintaan HomeServer Panel",
 			"index_2": "Jika Anda mengalami masalah atau fungsi yang tidak sempurna selama digunakan, tolong jelaskan",
 			"index_3": "Masalah atau kebutuhan Anda kepada kami secara rinci, kami akan berusaha sebaik mungkin untuk menyelesaikan atau memperbaiki",
 			"index_4": "Kami memberikan perhatian khusus pada umpan balik kebutuhan Anda, dan kami melakukan tinjauan persyaratan mingguan reguler. Saya harap saya dapat membantu Anda lebih baik",
@@ -87,12 +87,12 @@
 			"index_47": "Bayar sekarang"
 		},
 		"BindAccount": {
-			"index_1": "BIND Akun Aapanel",
+			"index_1": "BIND Akun HomeServer Panel",
 			"index_2": "Tidak ada akun, pergi untuk mendaftar",
 			"index_3": "Masuk",
 			"index_4": "Harap masukkan alamat email Anda",
 			"index_5": "Harap masukkan kata sandi Anda",
-			"index_6": "BIND Akun Aapanel",
+			"index_6": "BIND Akun HomeServer Panel",
 			"index_7": "Alamat email Anda",
 			"index_8": "Kata sandi Anda"
 		},

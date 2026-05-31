@@ -49,7 +49,7 @@
 			"accountState-721844-12": "Abgelaufen",
 			"accountState-721844-13": "Verfallsdatum",
 			"accountState-721844-14": "Anmerkungen",
-			"accountState-721844-15": "Login Sub Aapanel",
+			"accountState-721844-15": "Login Sub HomeServer Panel",
 			"accountState-721844-16": "Bearbeiten",
 			"accountState-721844-17": "Löschen",
 			"accountState-721844-18": "Benutzer erstellen, bitte warten ...",
@@ -79,7 +79,7 @@
 			"account_533924-6": "Deaktivieren",
 			"account_533924-7": "Quote",
 			"account_533924-8": "Verfügbare Unterbenutzer:",
-			"account_533924-9": "Aapanel Pro Edition kann nur {0} -Conto！ addieren！",
+			"account_533924-9": "HomeServer Panel Pro Edition kann nur {0} -Conto！ addieren！",
 			"account_533924-10": "Anzahl der Konto",
 			"account_533924-11": "Wenn die API nicht aktiviert ist oder nicht 127.0.0.1 zur API-Whitelist hinzugefügt wird, ist das Postamt der Unterpanel nicht unbrauchbar.",
 			"account_533924-12": "Ein-Klick-Whitening"
@@ -138,10 +138,10 @@
 			"disk_810348-13": "Aktivieren Sie die Festplattenquote, bitte warten Sie ..."
 		},
 		"Install": {
-			"index_1": "Aapanel -Subkonto - Mehrere Benutzer",
+			"index_1": "HomeServer Panel -Subkonto - Mehrere Benutzer",
 			"index_2": "Ressourcenquote",
 			"index_3": "Separatem Benutzerkandel",
-			"index_4": "So einfach wie Aapanel",
+			"index_4": "So einfach wie HomeServer Panel",
 			"index_5": "Installationsprotokoll",
 			"index_6": "Installieren, bitte warten ...",
 			"index_7": "Webserver: {0}, passen Sie bitte den aktuellen Webserver an {1} an, bitte Sicherung der zugehörigen Daten vor der Anpassung.",

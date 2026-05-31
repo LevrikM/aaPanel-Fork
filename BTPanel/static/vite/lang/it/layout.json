@@ -84,7 +84,7 @@
 			"config_6": "Ripristino di backup",
 			"config_7": "Migrare",
 			"config_8": "Pagina",
-			"logout_1": "Esci da aapanel",
+			"logout_1": "Esci da HomeServer Panel",
 			"logout_2": "Logout",
 			"logout_3": "Sei sicuro di uscire?",
 			"collapse": "Collapse sidebar",
@@ -103,8 +103,8 @@
 			"wap_12": "Exclusive Rules"
 		},
 		"Footer": {
-			"index_1": "Pannello Aapanel Linux © 2014 • {0} Aapanel",
-			"index_2": "Per suggerimenti di supporto, visitare il forum Aapanel",
+			"index_1": "Pannello HomeServer Panel Linux © 2014 • {0} HomeServer Panel",
+			"index_2": "Per suggerimenti di supporto, visitare il forum HomeServer Panel",
 			"index_3": "Documentazione"
 		},
 		"MessageBox": {

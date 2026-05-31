@@ -171,7 +171,7 @@
 			"index_43": "Por favor, feche e limpe o cache antes de ligar o modo de manutenção.",
 			"index_44": "Nota: Para evitar que o site seja rebaixado pelos mecanismos de indexação, por favor, não habilite o modo de manutenção por muito tempo.",
 			"index_45": "Recomenda-se carregar arquivos HTML para modelos, e usar URLs de dados para arquivos estáticos de modelos.",
-			"index_46": "Se você quiser que seu modelo use a função de configuração de modelo do aapanel, você pode iniciar o modo de manutenção uma vez e modificar o arquivo /wp-content/mintensionce/mintensione-template.html, mantendo o marcador de posição '{{}}'."
+			"index_46": "Se você quiser que seu modelo use a função de configuração de modelo do HomeServer Panel, você pode iniciar o modo de manutenção uma vez e modificar o arquivo /wp-content/mintensionce/mintensione-template.html, mantendo o marcador de posição '{{}}'."
 		},
 		"Label": {
 			"index_1": "Redefinir senha",
@@ -223,7 +223,7 @@
 			"index_5": "Cache Fastcgi",
 			"index_6": "Mais recursos estão em desenvolvimento, aguardando seu feedback",
 			"index_7": "Comprar agora",
-			"index_8": "Login conta aaPanel"
+			"index_8": "Login conta HomeServer Panel"
 		},
 		"Sets": {
 			"index_1": "Criar Conjunto",
@@ -272,7 +272,7 @@
 			"index_6": "Token de Segurança",
 			"index_7": "Por favor, insira token de conexão",
 			"index_8": "Como adicionar site com chave de segurança, siga os próximos passos",
-			"index_9": "aaPanel WP Toolkit",
+			"index_9": "HomeServer Panel WP Toolkit",
 			"index_10": "Carregue o plugin para o seu site",
 			"index_11": "Ative o plugin no seu site",
 			"index_12": "Clique no link Ver Chave de Segurança na página /wp-admin/plugins.php do seu site",
@@ -289,7 +289,7 @@
 			"index_2": "Format description:",
 			"index_3": "Batch format: Domain {'|'} Website Title {'|'} Admin Account {'|'} Admin Password {'|'} Prefix",
 			"index_4": "Domain format: Support multiple domains, separated by commas (e.g.: a.com,b.com)",
-			"index_7": "e.g. aapanel.com{'|'}my blog{'|'}admin{'|'}pass123456{'|'}wp_",
+			"index_7": "e.g. HomeServer Panel.com{'|'}my blog{'|'}admin{'|'}pass123456{'|'}wp_",
 			"index_5": "One site per line. If the password is empty, the system will automatically generate a strong password.",
 			"index_6": "If you set the prefix wp_, the system will automatically generate a random suffix.",
 			"index_8": "Please enter batch data",

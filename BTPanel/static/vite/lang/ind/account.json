@@ -49,7 +49,7 @@
 			"accountState-721844-12": "Kedaluwarsa",
 			"accountState-721844-13": "Kedaluwarsa",
 			"accountState-721844-14": "Perkataan",
-			"accountState-721844-15": "Sub Aapanel Login",
+			"accountState-721844-15": "Sub HomeServer Panel Login",
 			"accountState-721844-16": "Edit",
 			"accountState-721844-17": "Menghapus",
 			"accountState-721844-18": "Membuat pengguna, tunggu ...",
@@ -79,7 +79,7 @@
 			"account_533924-6": "Nonaktifkan",
 			"account_533924-7": "Kuota",
 			"account_533924-8": "Sub-pengguna yang tersedia: ",
-			"account_533924-9": "Aapanel Pro Edition hanya dapat menambahkan hingga {0} akun！",
+			"account_533924-9": "HomeServer Panel Pro Edition hanya dapat menambahkan hingga {0} akun！",
 			"account_533924-10": "Jumlah akun",
 			"account_533924-11": "Jika API tidak diaktifkan atau 127.0.0.1 tidak ditambahkan ke daftar putih API, kantor pos sub-panel tidak dapat digunakan.",
 			"account_533924-12": "Pemutih satu klik"
@@ -138,10 +138,10 @@
 			"disk_810348-13": "Mengaktifkan Kuota Disk, Tunggu ..."
 		},
 		"Install": {
-			"index_1": "Akun Sub Aapanel - banyak pengguna",
+			"index_1": "Akun Sub HomeServer Panel - banyak pengguna",
 			"index_2": "Kuota sumber daya",
 			"index_3": "Area pengguna terpisah",
-			"index_4": "Sesederhana aapanel",
+			"index_4": "Sesederhana HomeServer Panel",
 			"index_5": "Log Instalasi",
 			"index_6": "Menginstal, tunggu ...",
 			"index_7": "Server web: {0}, harap sesuaikan server web saat ini ke {1}, silakan cadangkan data terkait sebelum penyesuaian.",

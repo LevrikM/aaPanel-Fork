@@ -114,7 +114,7 @@
 			"index_2": "Mô tả định dạng:",
 			"index_3": "Định dạng hàng loạt: Tên miền {'|'} Tiêu đề trang web {'|'} Tài khoản quản trị viên {'|'} Mật khẩu quản trị viên {'|'} Tiền tố",
 			"index_4": "Định dạng tên miền: Hỗ trợ nhiều tên miền, phân tách bằng dấu phẩy (ví dụ: a.com,b.com)",
-			"index_7": "ví dụ: aapanel.com{'|'}blog của tôi{'|'}quản trị viên{'|'}pass123456{'|'}wp_",
+			"index_7": "ví dụ: HomeServer Panel.com{'|'}blog của tôi{'|'}quản trị viên{'|'}pass123456{'|'}wp_",
 			"index_5": "Một trang web trên mỗi dòng. Nếu mật khẩu trống, hệ thống sẽ tự động tạo mật khẩu mạnh.",
 			"index_6": "Nếu bạn đặt tiền tố wp_, hệ thống sẽ tự động tạo hậu tố ngẫu nhiên.",
 			"index_8": "Vui lòng nhập dữ liệu hàng loạt",
@@ -182,7 +182,7 @@
 			"index_43": "Vui lòng đóng và xóa bộ nhớ đệm trước khi bật chế độ bảo trì.",
 			"index_44": "Lưu ý: Để tránh website bị hạ cấp bởi các công cụ lập chỉ mục, vui lòng không bật chế độ bảo trì trong thời gian dài.",
 			"index_45": "Đề xuất tải lên tệp HTML cho mẫu và sử dụng URL dữ liệu cho tệp tĩnh của mẫu.",
-			"index_46": "Nếu bạn muốn mẫu của mình sử dụng chức năng cấu hình mẫu của aapanel, bạn có thể bắt đầu chế độ bảo trì một lần và sửa đổi tệp /wp-content/mintensionce/mintensione-template.html, giữ nguyên phần giữ chỗ '{{}}'."
+			"index_46": "Nếu bạn muốn mẫu của mình sử dụng chức năng cấu hình mẫu của HomeServer Panel, bạn có thể bắt đầu chế độ bảo trì một lần và sửa đổi tệp /wp-content/mintensionce/mintensione-template.html, giữ nguyên phần giữ chỗ '{{}}'."
 		},
 		"Label": {
 			"index_1": "Đặt lại mật khẩu",
@@ -234,7 +234,7 @@
 			"index_5": "Bộ đệm fastcgi",
 			"index_6": "Nhiều tính năng đang được phát triển, mong chờ phản hồi của bạn",
 			"index_7": "Mua ngay",
-			"index_8": "Đăng nhập tài khoản Aapanel"
+			"index_8": "Đăng nhập tài khoản HomeServer Panel"
 		},
 		"Sets": {
 			"index_1": "Tạo bộ",
@@ -283,7 +283,7 @@
 			"index_6": "Mã thông báo bảo mật",
 			"index_7": "Vui lòng nhập mã thông báo kết nối",
 			"index_8": "Cách thêm trang web có khóa bảo mật, hãy làm theo các bước tiếp theo",
-			"index_9": "Bộ công cụ AAPANEL WP",
+			"index_9": "Bộ công cụ HomeServer Panel WP",
 			"index_10": "Tải plugin lên trang web của bạn",
 			"index_11": "Kích hoạt plugin trên trang web của bạn",
 			"index_12": "Nhấp vào Xem liên kết khóa bảo mật trên trang web của bạn /wp-admin/plugins.php trang",

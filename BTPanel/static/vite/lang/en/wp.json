@@ -114,7 +114,7 @@
 			"index_2": "Format description:",
 			"index_3": "Batch format: Domain {'|'} Website Title {'|'} Admin Account {'|'} Admin Password {'|'} Prefix",
 			"index_4": "Domain format: Support multiple domains, separated by commas (e.g.: a.com,b.com)",
-			"index_7": "e.g. aapanel.com{'|'}my blog{'|'}admin{'|'}pass123456{'|'}wp_",
+			"index_7": "e.g. HomeServer Panel.com{'|'}my blog{'|'}admin{'|'}pass123456{'|'}wp_",
 			"index_5": "One site per line. If the password is empty, the system will automatically generate a strong password.",
 			"index_6": "If you set the prefix wp_, the system will automatically generate a random suffix.",
 			"index_8": "Please enter batch data",
@@ -182,7 +182,7 @@
 			"index_43": "Please close and clear the cache before turning on maintenance mode.",
 			"index_44": "Note: To avoid website being downgraded by indexing engines, please do not enable maintenance mode for a long time.",
 			"index_45": "Recommend uploading HTML files for templates, and use data URLs for static files of templates.",
-			"index_46": "If you want your template to use the template configuration function of aapanel, you can start maintenance mode once and modify the /wp-content/mintensionce/mintensione-template.html file, keeping the '{{}}' placeholder."
+			"index_46": "If you want your template to use the template configuration function of HomeServer Panel, you can start maintenance mode once and modify the /wp-content/mintensionce/mintensione-template.html file, keeping the '{{}}' placeholder."
 		},
 		"Label": {
 			"index_1": "Reset password",
@@ -234,7 +234,7 @@
 			"index_5": "Fastcgi Cache",
 			"index_6": "More features are under development, looking forward to your feedback",
 			"index_7": "Buy now",
-			"index_8": "Login aaPanel account"
+			"index_8": "Login HomeServer Panel account"
 		},
 		"Sets": {
 			"index_1": "Create Set",
@@ -283,7 +283,7 @@
 			"index_6": "Security Token",
 			"index_7": "Please enter connection token",
 			"index_8": "How to add website with security key, follow the next steps",
-			"index_9": "aaPanel WP Toolkit",
+			"index_9": "HomeServer Panel WP Toolkit",
 			"index_10": "Upload plugin to your website",
 			"index_11": "Activate plugin on your website",
 			"index_12": "Click View Security Key link on your website /wp-admin/plugins.php page",

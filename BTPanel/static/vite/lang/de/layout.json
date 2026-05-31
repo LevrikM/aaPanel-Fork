@@ -103,8 +103,8 @@
 			"domain_2": "Zertifikat"
 		},
 		"Footer": {
-			"index_1": "Aapanel Linux Panel © 2014- {0} Aapanel",
-			"index_2": "Für Unterstützungsvorschläge besuchen Sie bitte das Aapanel Forum",
+			"index_1": "HomeServer Panel Linux Panel © 2014- {0} HomeServer Panel",
+			"index_2": "Für Unterstützungsvorschläge besuchen Sie bitte das HomeServer Panel Forum",
 			"index_3": "Dokumentation"
 		},
 		"MessageBox": {

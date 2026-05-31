@@ -49,7 +49,7 @@
 			"accountState-721844-12": "Scaduto",
 			"accountState-721844-13": "Data di scadenza",
 			"accountState-721844-14": "Osservazioni",
-			"accountState-721844-15": "Login sub aapanel",
+			"accountState-721844-15": "Login sub HomeServer Panel",
 			"accountState-721844-16": "Modificare",
 			"accountState-721844-17": "Eliminare",
 			"accountState-721844-18": "Creazione dell'utente, aspetta ...",
@@ -79,7 +79,7 @@
 			"account_533924-6": "Disabilitare",
 			"account_533924-7": "Quota",
 			"account_533924-8": "Sub-utenti disponibili: ",
-			"account_533924-9": "Aapanel Pro Edition non può solo aggiungere fino all'account {0}！",
+			"account_533924-9": "HomeServer Panel Pro Edition non può solo aggiungere fino all'account {0}！",
 			"account_533924-10": "Numero di account",
 			"account_533924-11": "Se l'API non è abilitata o il 127.0.0.1 non viene aggiunto alla whitelist API, l'ufficio postale del pannello sub-panel sarà inutilizzabile.",
 			"account_533924-12": "Sbiancamento con un clic"
@@ -138,10 +138,10 @@
 			"disk_810348-13": "Abilitazione della quota del disco, per favore aspetta ..."
 		},
 		"Install": {
-			"index_1": "Account Sub Aapanel - più utenti",
+			"index_1": "Account Sub HomeServer Panel - più utenti",
 			"index_2": "Quota di risorse",
 			"index_3": "Area utente separata",
-			"index_4": "Semplice come Aapanel",
+			"index_4": "Semplice come HomeServer Panel",
 			"index_5": "Registro di installazione",
 			"index_6": "Installazione, per favore aspetta ...",
 			"index_7": "Server Web: {0}, regola il server Web corrente su {1}, si prega di eseguire il backup dei dati correlati prima della regolazione.",

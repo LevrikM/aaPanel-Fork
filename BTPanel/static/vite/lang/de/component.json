@@ -15,7 +15,7 @@
 		},
 		"Feedback": {
 			"index_7": "Rückmeldung",
-			"index_1": "Aapanel -Nachfrage -Feedback -Sammlung",
+			"index_1": "HomeServer Panel -Nachfrage -Feedback -Sammlung",
 			"index_2": "Wenn Sie während der Verwendung auf Probleme oder unvollständige Funktionen stoßen, beschreiben Sie bitte",
 			"index_3": "Ihre Probleme oder Bedürfnisse für uns im Detail, wir werden unser Bestes geben, um zu lösen oder zu verbessern",
 			"index_4": "Wir achten besonders auf das Feedback für die Anforderungen und führen regelmäßige wöchentliche Anforderungen überprüft. Ich hoffe ich kann dir besser helfen",
@@ -87,12 +87,12 @@
 			"index_47": "Jetzt bezahlen"
 		},
 		"BindAccount": {
-			"index_1": "Binden Sie einen Aapanel -Konto",
+			"index_1": "Binden Sie einen HomeServer Panel -Konto",
 			"index_2": "Kein Konto, gehen Sie zur Registrierung",
 			"index_3": "Einloggen",
 			"index_4": "Bitte geben Sie Ihre E -Mail -Adresse ein",
 			"index_5": "Bitte geben Sie Ihr Passwort ein",
-			"index_6": "Binden Sie einen Aapanel -Konto",
+			"index_6": "Binden Sie einen HomeServer Panel -Konto",
 			"index_7": "Ihre E-Mail-Adresse",
 			"index_8": "Ihr Passwort"
 		},

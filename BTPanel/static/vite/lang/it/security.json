@@ -76,7 +76,7 @@
 				"form_5": "Specificare IP",
 				"form_6": "Inserisci l'IP specificato, più IP dovrebbero essere separati da \",\" o interruzioni di linea. per esempio. 192.168.1.1, 192.168.1.2",
 				"form_7": "Specificare il dominio",
-				"form_8": "Immettere il dominio specificato. per esempio. www.aapanel.com",
+				"form_8": "Immettere il dominio specificato. per esempio. www.HomeServer Panel.com",
 				"form_9": "Strategia",
 				"form_10": "Direzione",
 				"form_11": "Osservazioni",
@@ -315,7 +315,7 @@
 			"Index_10": "Registri operativi"
 		},
 		"Conf": {
-			"Index_1": "Aapanel Brute Force Protection",
+			"Index_1": "HomeServer Panel Brute Force Protection",
 			"Index_2": "Il tuo indirizzo IP corrente [{0}] non è nella whitelist",
 			"Index_3": "Aggiungi a Whitelist",
 			"Index_4": "Si consiglia di attivare la funzione di antiviolenza. Farà meglio al server. Vuoi continuare?",
@@ -472,7 +472,7 @@
 				"cancelScan": "Cancel Scan",
 				"scanNow": "Scan Now",
 				"title": "Intelligent Website Security",
-				"desc": "Free website security powered by a robust engine. With one click you can check for website risk signals; aaPanel automatically provides optimization and remediation suggestions so you can harden your site with simple operations.",
+				"desc": "Free website security powered by a robust engine. With one click you can check for website risk signals; HomeServer Panel automatically provides optimization and remediation suggestions so you can harden your site with simple operations.",
 				"noPhpSite": "No PHP websites found"
 			},
 			"Metric": {
